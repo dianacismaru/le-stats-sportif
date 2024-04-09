@@ -41,6 +41,10 @@ class DataIngestor:
                         self.data[question][location] = []
                     
                     self.data[question][location].append(curr_line)
+    
+        # q = "Percent of adults aged 18 years and older who have an overweight classification"
+        # for value in self.data[q]["District of Columbia"]:
+        #     print(value[11])
 
         
         
