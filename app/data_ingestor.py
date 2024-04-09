@@ -1,10 +1,11 @@
 import csv
 
 class DataIngestor:
+    """
+        Class to ingest data from a CSV file and store it in a dictionary.
+    """
     def __init__(self, csv_path: str):
         self.data = {}
-        self.index_dict = {}
-        self.columns = []
         self.csv_path = csv_path
 
         self.questions_best_is_min = [
@@ -31,7 +32,23 @@ class DataIngestor:
         ]
 
     def process_csv(self):
-        with open (self.csv_path, 'r') as csv_file:
+        """
+            Processes the CSV file and stores the data in a dictionary with the
+            following structure:
+
+            {
+                "Question 1": {
+                    "State 1": {
+                        "Data_Value": [value1, value2, ...],
+                        "('StratificationCategory1', 'Stratification1')": [value1, value2, ...],
+                        ...
+                    },
+                    ...
+                },
+                ...
+            }
+        """
+        with open (self.csv_path, 'r', encoding='utf-8') as csv_file:
             reader = csv.DictReader(csv_file)
             for row in reader:
                 question = row["Question"]

@@ -1,6 +1,7 @@
 from queue import Queue
-import statistics
 from threading import Thread, Event, Lock
+
+import statistics
 import os
 
 from app import helper as hp
@@ -17,7 +18,7 @@ class ThreadPool:
         self.lock = Lock()
         self.job_counter = 1
         self.jobs = {}
-        
+
         num_threads = self.get_num_threads()
         for _ in range(num_threads):
             thread = TaskRunner(self.tasks_queue, self.shutdown_event, self.jobs,
@@ -41,6 +42,7 @@ class ThreadPool:
         job_id = self.job_counter
         task['job_id'] = job_id
         self.jobs[job_id] = ("running", -1)
+
         self.tasks_queue.put(task)
 
         with self.lock:
@@ -48,7 +50,7 @@ class ThreadPool:
 
         return job_id
 
-    def shutdown(self):
+    def graceful_shutdown(self):
         """
             Gracefully shuts down the thread pool
         """
@@ -79,7 +81,6 @@ class TaskRunner(Thread):
 
                 # Execute job
                 job_id = task['job_id']
-
                 result = self.execute(task)
 
                 # Signal that the job is done
@@ -112,12 +113,6 @@ class TaskRunner(Thread):
             result = self.mean_by_category(question)
         elif data['type'] == hp.STATE_MEAN_BY_CATEGORY:
             result = self.state_mean_by_category(question, data['state'])
-        elif data['type'] == hp.GRACEFUL_SHUTDOWN:
-            result = self.graceful_shutdown()
-        elif data['type'] == hp.JOBS:
-            result = self.jobs()
-        elif data['type'] == hp.NUM_JOBS:
-            result = self.num_jobs()
 
         return result
 
@@ -134,7 +129,7 @@ class TaskRunner(Thread):
         if question in self.data_ingestor.questions_best_is_min:
             return dict(sorted(result.items(), key=lambda item: item[1], reverse=best)[-5:])
         return dict(sorted(result.items(), key=lambda item: item[1], reverse=best)[:5])
-    
+
     def global_mean(self, question):
         """
             Returns the global mean value for the given question
@@ -146,8 +141,8 @@ class TaskRunner(Thread):
         for state in states_dict:
             sum_data += sum(states_dict[state]["Data_Value"])
             num_data += len(states_dict[state]["Data_Value"])
-        
-        return {"global_mean": sum_data / num_data}    
+
+        return {"global_mean": sum_data / num_data}
 
     def diff_from_mean(self, question):
         """
@@ -158,9 +153,8 @@ class TaskRunner(Thread):
         states_mean = self.states_mean(question)
 
         return {key: global_mean - value for key, value in states_mean.items()}
-    
+
     def state_diff_from_mean(self, question, state):
-        print(question, state)
         """
             Returns the difference of the global mean value and the mean value for the specified
             state for the given question
@@ -171,30 +165,35 @@ class TaskRunner(Thread):
         return {state: global_mean - state_mean}
 
     def mean_by_category(self, question):
+        """
+            Returns the mean value for each touple of 
+            (State, StratificationCategory1, Stratification1)
+        """
         states_dict = self.data_ingestor.data[question]
         result = {}
 
         for state in states_dict:
             state_data = self.data_ingestor.data[question][state]
             for key in state_data:
-                if key != "Data_Value" and key != "('', '')":
+                if key not in ('Data_Value', "('', '')"):
                     new_key = key[0:1] + f"'{state}', " + key[1:]
                     result[new_key] = statistics.mean(state_data[key])
 
         return result
 
     def state_mean_by_category(self,  question, state):
+        """
+            Returns the mean value for each touple of (StratificationCategory1, Stratification1)
+            for the specified state for the given question
+        """
         state_data = self.data_ingestor.data[question][state]
 
         result = {}
         for key in state_data:
             if key != "Data_Value":
                 result[key] = statistics.mean(state_data[key])
-        
+
         return {state: result}
-    
-    def graceful_shutdown(self):
-        return {"Graceful Shutdown": 0.0}
 
     def states_mean(self, question):
         """
@@ -217,9 +216,3 @@ class TaskRunner(Thread):
         result = statistics.mean(state_values)
 
         return {state : result}
-
-    def jobs(self):
-        return {"Jobs": 0}
-
-    def num_jobs(self):
-        return {"Num Jobs": 0}

@@ -2,53 +2,37 @@ from flask import request, jsonify
 from app import webserver
 from app import helper as hp
 
-# Example endpoint definition
-@webserver.route('/api/post_endpoint', methods=['POST'])
-def post_endpoint():
-    if request.method == 'POST':
-        # Assuming the request contains JSON data
-        data = request.json
-        print(f"got data in post {data}")
-        # Process the received data
-        # For demonstration purposes, just echoing back the received data
-        response = {"message": "Received data successfully", "data": data}
-
-        # Sending back a JSON response
-        return jsonify(response)
-
-    # Method Not Allowed
-    return jsonify({"error": "Method not allowed"}), 405
-
 @webserver.route('/api/get_results/<job_id>', methods=['GET'])
 def get_response(job_id):
-    print(f"JobID is {job_id}")
-    # print(webserver.tasks_runner.jobs.keys())
+    """
+        Request handler for the get_results endpoint
+    """
     job_id = int(job_id)
 
     # Check if job_id is valid
     if job_id not in webserver.tasks_runner.jobs:
-        return jsonify({"error": "job invalid"}), 405
+        return jsonify({"error": "invalid job id"}), 405
 
     # Check if job_id is done and return the result
     status, result = webserver.tasks_runner.jobs[job_id]
-    # print("status is " + status + "\n")
+
     if status == "done":
-        # print("e done!\n")
         return jsonify({
             'status': 'done',
             'data': result
         })
 
     # If not, return running status
-    # print("e running\n")
     return jsonify({'status': 'running'})
 
 @webserver.route('/api/states_mean', methods=['POST'])
 def states_mean_request():
+    """
+        Request handler for the states_mean endpoint
+    """
     # Get request data
     data = request.json
     data['type'] = hp.STATES_MEAN
-    print(f"Got request {data}")
 
     # Register job and increment job_id counter
     job_id = webserver.tasks_runner.register_job(data)
@@ -58,6 +42,9 @@ def states_mean_request():
 
 @webserver.route('/api/state_mean', methods=['POST'])
 def state_mean_request():
+    """
+        Request handler for the state_mean endpoint
+    """
     # Get request data
     data = request.json
     data['type'] = hp.STATE_MEAN
@@ -70,6 +57,9 @@ def state_mean_request():
 
 @webserver.route('/api/best5', methods=['POST'])
 def best5_request():
+    """
+        Request handler for the best5 endpoint
+    """
     # Get request data
     data = request.json
     data['type'] = hp.BEST5
@@ -82,6 +72,9 @@ def best5_request():
 
 @webserver.route('/api/worst5', methods=['POST'])
 def worst5_request():
+    """
+        Request handler for the worst5 endpoint
+    """
     # Get request data
     data = request.json
     data['type'] = hp.WORST5
@@ -94,6 +87,9 @@ def worst5_request():
 
 @webserver.route('/api/global_mean', methods=['POST'])
 def global_mean_request():
+    """
+        Request handler for the global_mean endpoint
+    """
     # Get request data
     data = request.json
     data['type'] = hp.GLOBAL_MEAN
@@ -106,6 +102,9 @@ def global_mean_request():
 
 @webserver.route('/api/diff_from_mean', methods=['POST'])
 def diff_from_mean_request():
+    """
+        Request handler for the diff_from_mean endpoint
+    """
     # Get request data
     data = request.json
     data['type'] = hp.DIFF_FROM_MEAN
@@ -118,6 +117,9 @@ def diff_from_mean_request():
 
 @webserver.route('/api/state_diff_from_mean', methods=['POST'])
 def state_diff_from_mean_request():
+    """
+        Request handler for the state_diff_from_mean endpoint
+    """
     # Get request data
     data = request.json
     data['type'] = hp.STATE_DIFF_FROM_MEAN
@@ -130,6 +132,9 @@ def state_diff_from_mean_request():
 
 @webserver.route('/api/mean_by_category', methods=['POST'])
 def mean_by_category_request():
+    """
+        Request handler for the mean_by_category_request endpoint
+    """
     # Get request data
     data = request.json
     data['type'] = hp.MEAN_BY_CATEGORY
@@ -142,6 +147,9 @@ def mean_by_category_request():
 
 @webserver.route('/api/state_mean_by_category', methods=['POST'])
 def state_mean_by_category_request():
+    """
+        Request handler for the state_mean_by_category endpoint
+    """
     # Get request data
     data = request.json
     data['type'] = hp.STATE_MEAN_BY_CATEGORY
@@ -152,24 +160,33 @@ def state_mean_by_category_request():
     # Return associated job_id
     return jsonify({"job_id": job_id})
 
-# You can check localhost in your browser to see what this displays
-@webserver.route('/')
-@webserver.route('/index')
-def index():
-    routes = get_defined_routes()
-    msg = f"Hello, World!\n Interact with the webserver using one of the defined routes:\n"
+@webserver.route('/api/graceful_shutdown', methods=['GET'])
+def graceful_shutdown_request():
+    """
+        Request handler for the graceful_shutdown endpoint
+    """
+    webserver.tasks_runner.graceful_shutdown()
+    return jsonify({"shutdown": "done"})
 
-    # Display each route as a separate HTML <p> tag
-    paragraphs = ""
-    for route in routes:
-        paragraphs += f"<p>{route}</p>"
+@webserver.route('/api/jobs', methods=['GET'])
+def jobs_request():
+    """
+        Request handler for the jobs endpoint
+    """
+    jobs = []
+    for job_id in webserver.tasks_runner.jobs:
+        jobs.append({f"job_id_{job_id}": webserver.tasks_runner.jobs[job_id][0]})
 
-    msg += paragraphs
-    return msg
+    return jsonify(jobs)
 
-def get_defined_routes():
-    routes = []
-    for rule in webserver.url_map.iter_rules():
-        methods = ', '.join(rule.methods)
-        routes.append(f"Endpoint: \"{rule}\" Methods: \"{methods}\"")
-    return routes
+@webserver.route('/api/num_jobs', methods=['GET'])
+def num_jobs_request():
+    """
+        Request handler for the num_jobs endpoint
+    """
+    num_jobs = 0
+    for job_id in webserver.tasks_runner.jobs:
+        if webserver.tasks_runner.jobs[job_id][0] == "running":
+            num_jobs += 1
+
+    return jsonify({"Num Jobs": num_jobs})
