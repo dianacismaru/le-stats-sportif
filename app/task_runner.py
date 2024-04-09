@@ -1,22 +1,15 @@
 from queue import Queue
 from threading import Thread, Event, Lock
-from app import helper as hp
-
-import time
 import os
 
+from app import helper as hp
+
 class ThreadPool:
+    """
+        Class that manages a pool of threads that execute different jobs
+    """
     def __init__(self, data_ingestor):
-        # You must implement a ThreadPool of TaskRunners
-        # Your ThreadPool should check if an environment variable TP_NUM_OF_THREADS is defined
-        # If the env var is defined, that is the number of threads to be used by the thread pool
-        # Otherwise, you are to use what the hardware concurrency allows
-        # You are free to write your implementation as you see fit, but
-        # You must NOT:
-        #   * create more threads than the hardware concurrency allows
-        #   * recreate threads for each task
         self.data_ingestor = data_ingestor
-        self.num_threads = self.get_num_threads()
         self.tasks_queue = Queue()
         self.shutdown_event = Event()
         self.threads = []
@@ -24,22 +17,30 @@ class ThreadPool:
         self.job_counter = 1
         self.jobs = {}
         
-        for _ in range(self.num_threads):
-            thread = TaskRunner(self.tasks_queue, self.shutdown_event, self.jobs, self.data_ingestor)
+        num_threads = self.get_num_threads()
+        for _ in range(num_threads):
+            thread = TaskRunner(self.tasks_queue, self.shutdown_event, self.jobs,
+                                self.data_ingestor)
             thread.start()
             self.threads.append(thread)
 
     def get_num_threads(self):
+        """
+            Returns the number of threads to be used
+        """
         if 'TP_NUM_OF_THREADS' in os.environ:
             return int(os.environ['TP_NUM_OF_THREADS'])
         return os.cpu_count()
 
     def register_job(self, task):
+        """
+            Registers a new job in the queue and increments the job counter
+            Returns the job id of the registered task
+        """
         job_id = self.job_counter
         task['job_id'] = job_id
         self.jobs[job_id] = ("running", -1)
         self.tasks_queue.put(task)
-        # print("s-a inregistrat jobul cu job id " + str(job_id) + " si tipul " + str(task['type']))
 
         with self.lock:
             self.job_counter += 1
@@ -47,12 +48,18 @@ class ThreadPool:
         return job_id
 
     def shutdown(self):
+        """
+            Gracefully shuts down the thread pool
+        """
         self.shutdown_event.set()
 
         for thread in self.threads:
             thread.join()
 
 class TaskRunner(Thread):
+    """
+        Class that represents a thread that responds to different requests
+    """
     def __init__(self, tasks_queue, shutdown_event, jobs, data_ingestor):
         super().__init__()
         self.tasks_queue = tasks_queue
@@ -71,107 +78,136 @@ class TaskRunner(Thread):
 
                 # Execute job
                 job_id = task['job_id']
-                # print("SE EXECUTA jobul cu job id " + str(job_id) + " si tipul " + str(task['type']))
 
                 result = self.execute(task)
-                # print("s-a intors ")
-                # print(result)
-                # print(f"Executing job {job_id}")
-                
+
                 # Signal that the job is done
                 self.jobs[job_id] = ("done", result)
-            except:
+            except Exception:
                 continue
 
-    """
-        Returns the JSON response for the given data
-    """
     def execute(self, data):
-        print("INTRU IN EXECUTE")
-        if data['type'] == hp.STATES_MEAN:
-            return self.states_mean(data)
-        elif data['type'] == hp.STATE_MEAN:
-            return self.state_mean(data)
-        elif data['type'] == hp.BEST5:
-            print("IF LA BEST5")
-            return self.best5(data)
-        elif data['type'] == hp.WORST5:
-            return self.worst5(data)
-        elif data['type'] == hp.GLOBAL_MEAN:
-            return self.global_mean(data)
-        elif data['type'] == hp.STATE_DIFF_FROM_MEAN:
-            return self.state_diff_from_mean(data)
-        elif data['type'] == hp.MEAN_BY_CATEGORY:
-            return self.mean_by_category(data)
-        elif data['type'] == hp.GRACEFUL_SHUTDOWN:
-            return self.graceful_shutdown()
-        elif data['type'] == hp.JOBS:
-            return self.jobs()
-        elif data['type'] == hp.NUM_JOBS:
-            return self.num_jobs()
+        """
+            Returns the JSON response for the given data
+        """
+        result = {}
 
-    """
-        Returns the mean value for the best 5 states for the given question
-    """
-    def best5(self, data):
+        if data['type'] == hp.STATES_MEAN:
+            result = self.states_mean(data)
+        elif data['type'] == hp.STATE_MEAN:
+            result = self.state_mean(data)
+        elif data['type'] == hp.BEST5:
+            result = self.top5(data, True)
+        elif data['type'] == hp.WORST5:
+            result = self.top5(data, False)
+        elif data['type'] == hp.GLOBAL_MEAN:
+            result = self.global_mean(data)
+        elif data['type'] == hp.DIFF_FROM_MEAN:
+            result = self.diff_from_mean(data)
+        elif data['type'] == hp.STATE_DIFF_FROM_MEAN:
+            result = self.state_diff_from_mean(data)
+        elif data['type'] == hp.MEAN_BY_CATEGORY:
+            result = self.mean_by_category(data)
+        elif data['type'] == hp.GRACEFUL_SHUTDOWN:
+            result = self.graceful_shutdown()
+        elif data['type'] == hp.JOBS:
+            result = self.jobs()
+        elif data['type'] == hp.NUM_JOBS:
+            result = self.num_jobs()
+
+        return result
+
+    def top5(self, data, best):
+        """
+            Returns the mean value for the best or worst 5 states for the given question
+        """
         question = data['question']
         data_value_index = self.data_ingestor.index_dict["Data_Value"]
         question_values = self.data_ingestor.data[question]
         result = {}
-        for location in question_values.keys():
-            num_values = question_values[location].__len__()
-            sum = 0.0
 
-            for field in question_values[location]:
-                sum += float(field[data_value_index])
-
-            avg = sum / num_values
-            result[location] = avg
+        for state in question_values.keys():
+            result[state] = hp.compute_location_mean(self.data_ingestor, state,
+                                                         data_value_index, question_values)
 
         if question in self.data_ingestor.questions_best_is_min:
-            return dict(sorted(result.items(), key=lambda item: item[1], reverse=True)[-5:])
-        return dict(sorted(result.items(), key=lambda item: item[1], reverse=True)[:5])
-    
-    def worst5(self, data):
+            return dict(sorted(result.items(), key=lambda item: item[1], reverse=best)[-5:])
+        return dict(sorted(result.items(), key=lambda item: item[1], reverse=best)[:5])
+
+    def global_mean(self, data):
+        """
+            Returns the global mean value for the given question
+        """
         question = data['question']
-        print(question)
+        data_value_index = self.data_ingestor.index_dict["Data_Value"]
+        question_values = self.data_ingestor.data[question]
+        num_data = 0
+        sum_data = 0.0
+
+        for state in question_values.keys():
+            for field in question_values[state]:
+                sum_data += float(field[data_value_index])
+                num_data += 1
+        
+        return {"global_mean": sum_data / num_data}    
+
+    def diff_from_mean(self, data):
+        """
+            Returns the difference of the global mean value and the mean value for each state 
+            for the given question
+        """
+        global_mean = self.global_mean(data)["global_mean"]
+        states_mean = self.states_mean(data)
+
+        return {key: global_mean - value for key, value in states_mean.items()}
+    
+    def state_diff_from_mean(self, data):
+        """
+            Returns the difference of the global mean value and the mean value for the specified
+            state for the given question
+        """
+        state = data['state']
+        global_mean = self.global_mean(data)["global_mean"]
+        state_mean = self.state_mean(data)[state]
+
+        return {state: global_mean - state_mean}
+
+    def mean_by_category(self, data):
+        return {"Mean By Category": 0.0}
+
+    def graceful_shutdown(self):
+        return {"Graceful Shutdown": 0.0}
+
+    def states_mean(self, data):
+        """
+            Returns the mean value for each state for the given question
+        """
+        question = data['question']
         data_value_index = self.data_ingestor.index_dict["Data_Value"]
         question_values = self.data_ingestor.data[question]
         result = {}
-        for location in question_values.keys():
-            num_values = question_values[location].__len__()
-            sum = 0.0
 
-            for field in question_values[location]:
-                sum += float(field[data_value_index])
+        for state in question_values.keys():
+            result[state] = hp.compute_location_mean(self.data_ingestor, state,
+                                                        data_value_index, question_values)
 
-            avg = sum / num_values
-            result[location] = avg
+        return dict(sorted(result.items(), key=lambda item: item[1]))
 
-        if question in self.data_ingestor.questions_best_is_max:
-            return dict(sorted(result.items(), key=lambda item: item[1])[:5])
-        return dict(sorted(result.items(), key=lambda item: item[1])[-5:])
-    
-    def global_mean(self, data):
-        return {"Global Mean": 0.0}
-    
-    def state_diff_from_mean(self, data):
-        return {"State Diff From Mean": 0.0}
-    
-    def mean_by_category(self, data):
-        return {"Mean By Category": 0.0}
-    
-    def graceful_shutdown(self):
-        return {"Graceful Shutdown": 0.0}
-    
-    def states_mean(self, data):
-        return {"States Mean": 0.0}
-    
     def state_mean(self, data):
-        return {"State Mean": 0.0}
-    
+        """
+            Returns the mean value for the specified state for the given question
+        """
+        question = data['question']
+        state = data['state']
+        data_value_index = self.data_ingestor.index_dict["Data_Value"]
+        question_values = self.data_ingestor.data[question]
+        result =  hp.compute_location_mean(self.data_ingestor, state, data_value_index,
+                                           question_values)
+
+        return {state : result}
+
     def jobs(self):
         return {"Jobs": 0}
-    
+
     def num_jobs(self):
         return {"Num Jobs": 0}
