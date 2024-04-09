@@ -48,7 +48,9 @@ class DataIngestor:
 
                 self.data[question][state]["Data_Value"].append(data_value)
 
-                if (stratification_category1, stratification1) not in self.data[question][state]:
-                    self.data[question][state][(stratification_category1, stratification1)] = []
+                touple = f"('{stratification_category1}', '{stratification1}')"
 
-                self.data[question][state][(stratification_category1, stratification1)].append(data_value)
+                if touple not in self.data[question][state]:
+                    self.data[question][state][touple] = []
+
+                self.data[question][state][touple].append(data_value)

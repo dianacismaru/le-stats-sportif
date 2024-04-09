@@ -109,9 +109,9 @@ class TaskRunner(Thread):
         elif data['type'] == hp.STATE_DIFF_FROM_MEAN:
             result = self.state_diff_from_mean(question, data['state'])
         elif data['type'] == hp.MEAN_BY_CATEGORY:
-            result = self.mean_by_category(data)
+            result = self.mean_by_category(question)
         elif data['type'] == hp.STATE_MEAN_BY_CATEGORY:
-            result = self.state_mean_by_category(data)
+            result = self.state_mean_by_category(question, data['state'])
         elif data['type'] == hp.GRACEFUL_SHUTDOWN:
             result = self.graceful_shutdown()
         elif data['type'] == hp.JOBS:
@@ -170,11 +170,28 @@ class TaskRunner(Thread):
 
         return {state: global_mean - state_mean}
 
-    def mean_by_category(self, data):
-        return {"Mean By Category": 0.0}
+    def mean_by_category(self, question):
+        states_dict = self.data_ingestor.data[question]
+        result = {}
 
-    def state_mean_by_category(self, data):
-        return {"Mean By Category": 0.0}
+        for state in states_dict:
+            state_data = self.data_ingestor.data[question][state]
+            for key in state_data:
+                if key != "Data_Value" and key != "('', '')":
+                    new_key = key[0:1] + f"'{state}', " + key[1:]
+                    result[new_key] = statistics.mean(state_data[key])
+
+        return result
+
+    def state_mean_by_category(self,  question, state):
+        state_data = self.data_ingestor.data[question][state]
+
+        result = {}
+        for key in state_data:
+            if key != "Data_Value":
+                result[key] = statistics.mean(state_data[key])
+        
+        return {state: result}
     
     def graceful_shutdown(self):
         return {"Graceful Shutdown": 0.0}
