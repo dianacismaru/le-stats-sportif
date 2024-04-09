@@ -1,4 +1,5 @@
 from queue import Queue
+import statistics
 from threading import Thread, Event, Lock
 import os
 
@@ -91,23 +92,26 @@ class TaskRunner(Thread):
             Returns the JSON response for the given data
         """
         result = {}
+        question = data['question']
 
         if data['type'] == hp.STATES_MEAN:
-            result = self.states_mean(data)
+            result = self.states_mean(question)
         elif data['type'] == hp.STATE_MEAN:
-            result = self.state_mean(data)
+            result = self.state_mean(question, data['state'])
         elif data['type'] == hp.BEST5:
-            result = self.top5(data, True)
+            result = self.top5(True, question)
         elif data['type'] == hp.WORST5:
-            result = self.top5(data, False)
+            result = self.top5(False, question)
         elif data['type'] == hp.GLOBAL_MEAN:
-            result = self.global_mean(data)
+            result = self.global_mean(question)
         elif data['type'] == hp.DIFF_FROM_MEAN:
-            result = self.diff_from_mean(data)
+            result = self.diff_from_mean(question)
         elif data['type'] == hp.STATE_DIFF_FROM_MEAN:
-            result = self.state_diff_from_mean(data)
+            result = self.state_diff_from_mean(question, data['state'])
         elif data['type'] == hp.MEAN_BY_CATEGORY:
             result = self.mean_by_category(data)
+        elif data['type'] == hp.STATE_MEAN_BY_CATEGORY:
+            result = self.state_mean_by_category(data)
         elif data['type'] == hp.GRACEFUL_SHUTDOWN:
             result = self.graceful_shutdown()
         elif data['type'] == hp.JOBS:
@@ -117,92 +121,83 @@ class TaskRunner(Thread):
 
         return result
 
-    def top5(self, data, best):
+    def top5(self, best, question):
         """
             Returns the mean value for the best or worst 5 states for the given question
         """
-        question = data['question']
-        data_value_index = self.data_ingestor.index_dict["Data_Value"]
-        question_values = self.data_ingestor.data[question]
+        states_dict = self.data_ingestor.data[question]
         result = {}
 
-        for state in question_values.keys():
-            result[state] = hp.compute_location_mean(self.data_ingestor, state,
-                                                         data_value_index, question_values)
+        for state in states_dict:
+            result[state] = statistics.mean(self.data_ingestor.data[question][state]["Data_Value"])
 
         if question in self.data_ingestor.questions_best_is_min:
             return dict(sorted(result.items(), key=lambda item: item[1], reverse=best)[-5:])
         return dict(sorted(result.items(), key=lambda item: item[1], reverse=best)[:5])
-
-    def global_mean(self, data):
+    
+    def global_mean(self, question):
         """
             Returns the global mean value for the given question
         """
-        question = data['question']
-        data_value_index = self.data_ingestor.index_dict["Data_Value"]
-        question_values = self.data_ingestor.data[question]
+        states_dict = self.data_ingestor.data[question]
         num_data = 0
-        sum_data = 0.0
+        sum_data = 0
 
-        for state in question_values.keys():
-            for field in question_values[state]:
-                sum_data += float(field[data_value_index])
-                num_data += 1
+        for state in states_dict:
+            sum_data += sum(states_dict[state]["Data_Value"])
+            num_data += len(states_dict[state]["Data_Value"])
         
         return {"global_mean": sum_data / num_data}    
 
-    def diff_from_mean(self, data):
+    def diff_from_mean(self, question):
         """
             Returns the difference of the global mean value and the mean value for each state 
             for the given question
         """
-        global_mean = self.global_mean(data)["global_mean"]
-        states_mean = self.states_mean(data)
+        global_mean = self.global_mean(question)["global_mean"]
+        states_mean = self.states_mean(question)
 
         return {key: global_mean - value for key, value in states_mean.items()}
     
-    def state_diff_from_mean(self, data):
+    def state_diff_from_mean(self, question, state):
+        print(question, state)
         """
             Returns the difference of the global mean value and the mean value for the specified
             state for the given question
         """
-        state = data['state']
-        global_mean = self.global_mean(data)["global_mean"]
-        state_mean = self.state_mean(data)[state]
+        global_mean = self.global_mean(question)["global_mean"]
+        state_mean = self.state_mean(question, state)[state]
 
         return {state: global_mean - state_mean}
 
     def mean_by_category(self, data):
         return {"Mean By Category": 0.0}
 
+    def state_mean_by_category(self, data):
+        return {"Mean By Category": 0.0}
+    
     def graceful_shutdown(self):
         return {"Graceful Shutdown": 0.0}
 
-    def states_mean(self, data):
+    def states_mean(self, question):
         """
             Returns the mean value for each state for the given question
         """
-        question = data['question']
-        data_value_index = self.data_ingestor.index_dict["Data_Value"]
-        question_values = self.data_ingestor.data[question]
+        states_dict = self.data_ingestor.data[question]
         result = {}
 
-        for state in question_values.keys():
-            result[state] = hp.compute_location_mean(self.data_ingestor, state,
-                                                        data_value_index, question_values)
+        for state in states_dict:
+            state_values = self.data_ingestor.data[question][state]["Data_Value"]
+            result[state] = statistics.mean(state_values)
 
         return dict(sorted(result.items(), key=lambda item: item[1]))
 
-    def state_mean(self, data):
+    def state_mean(self, question, state):
         """
             Returns the mean value for the specified state for the given question
         """
-        question = data['question']
-        state = data['state']
-        data_value_index = self.data_ingestor.index_dict["Data_Value"]
-        question_values = self.data_ingestor.data[question]
-        result =  hp.compute_location_mean(self.data_ingestor, state, data_value_index,
-                                           question_values)
+        state_values = self.data_ingestor.data[question][state]["Data_Value"]
+        result = statistics.mean(state_values)
 
         return {state : result}
 

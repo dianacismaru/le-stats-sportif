@@ -1,3 +1,5 @@
+import csv
+
 class DataIngestor:
     def __init__(self, csv_path: str):
         self.data = {}
@@ -29,23 +31,24 @@ class DataIngestor:
         ]
 
     def process_csv(self):
-        with open (self.csv_path, 'r') as f:
-            first_line = True
-            for line in f.readlines():
-                if first_line:
-                    self.columns = line.strip().split(',')
-                    for col in range(len(self.columns)):
-                        self.index_dict[self.columns[col]] = col
-                    first_line = False
-                else:
-                    curr_line = line.strip().split(',')
+        with open (self.csv_path, 'r') as csv_file:
+            reader = csv.DictReader(csv_file)
+            for row in reader:
+                question = row["Question"]
+                state = row["LocationDesc"]
+                data_value = float(row["Data_Value"])
+                stratification_category1 = row["StratificationCategory1"]
+                stratification1 = row["Stratification1"]
 
-                    question = curr_line[8]
-                    if question not in self.data:
-                        self.data[question] = {}
+                if question not in self.data:
+                    self.data[question] = {}
 
-                    state = curr_line[4]
-                    if state not in self.data[question]:
-                        self.data[question][state] = []
+                if state not in self.data[question]:
+                    self.data[question][state] = {"Data_Value": []}
 
-                    self.data[question][state].append(curr_line)
+                self.data[question][state]["Data_Value"].append(data_value)
+
+                if (stratification_category1, stratification1) not in self.data[question][state]:
+                    self.data[question][state][(stratification_category1, stratification1)] = []
+
+                self.data[question][state][(stratification_category1, stratification1)].append(data_value)
