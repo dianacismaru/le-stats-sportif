@@ -10,20 +10,26 @@ def get_response(job_id):
     job_id = int(job_id)
 
     # Check if job_id is valid
-    if job_id not in webserver.tasks_runner.jobs:
-        return jsonify({"error": "invalid job id"}), 405
+    if job_id not in webserver.tasks_runner.tasks_status.keys():
+        print("Invalid job id")
+        return jsonify({"error": "invalid job id"})
 
     # Check if job_id is done and return the result
-    status, result = webserver.tasks_runner.jobs[job_id]
+    if webserver.tasks_runner.tasks_status[job_id] == "running":
+        return jsonify({"status": "running"})
 
-    if status == "done":
-        return jsonify({
-            'status': 'done',
-            'data': result
-        })
+    # Extract result from file
+    json_result = hp.extract_result(job_id)
 
-    # If not, return running status
-    return jsonify({'status': 'running'})
+    # Check if job_id is shutdown
+    if webserver.tasks_runner.tasks_status[job_id] == "shutdown":
+        return jsonify(json_result)
+
+    # Return result from finished task
+    return jsonify({
+        "status": "done",
+        "data": json_result
+    })
 
 @webserver.route('/api/states_mean', methods=['POST'])
 def states_mean_request():
@@ -166,7 +172,8 @@ def graceful_shutdown_request():
         Request handler for the graceful_shutdown endpoint
     """
     webserver.tasks_runner.graceful_shutdown()
-    return jsonify({"shutdown": "done"})
+
+    return jsonify({"status": "shutdown"})
 
 @webserver.route('/api/jobs', methods=['GET'])
 def jobs_request():
@@ -174,8 +181,8 @@ def jobs_request():
         Request handler for the jobs endpoint
     """
     jobs = []
-    for job_id in webserver.tasks_runner.jobs:
-        jobs.append({f"job_id_{job_id}": webserver.tasks_runner.jobs[job_id][0]})
+    for job_id in webserver.tasks_runner.tasks_status.keys():
+        jobs.append({f"job_id_{job_id}": webserver.tasks_runner.tasks_status[job_id]})
 
     return jsonify(jobs)
 
@@ -185,8 +192,8 @@ def num_jobs_request():
         Request handler for the num_jobs endpoint
     """
     num_jobs = 0
-    for job_id in webserver.tasks_runner.jobs:
-        if webserver.tasks_runner.jobs[job_id][0] == "running":
+    for job_id in webserver.tasks_runner.tasks_status:
+        if webserver.tasks_runner.tasks_status[job_id] == "running":
             num_jobs += 1
 
-    return jsonify({"Num Jobs": num_jobs})
+    return jsonify({"num_jobs": num_jobs})

@@ -12,16 +12,16 @@ class ThreadPool:
     """
     def __init__(self, data_ingestor):
         self.data_ingestor = data_ingestor
+        self.threads = []
         self.tasks_queue = Queue()
         self.shutdown_event = Event()
-        self.threads = []
         self.lock = Lock()
+        self.tasks_status = {}
         self.job_counter = 1
-        self.jobs = {}
 
         num_threads = self.get_num_threads()
         for _ in range(num_threads):
-            thread = TaskRunner(self.tasks_queue, self.shutdown_event, self.jobs,
+            thread = TaskRunner(self.tasks_queue, self.shutdown_event, self.tasks_status,
                                 self.data_ingestor)
             thread.start()
             self.threads.append(thread)
@@ -37,16 +37,23 @@ class ThreadPool:
     def register_job(self, task):
         """
             Registers a new job in the queue and increments the job counter
-            Returns the job id of the registered task
+            Returns 
+                the job id of the registered task, 
+                -1 if the thread pool is shut down
         """
         job_id = self.job_counter
         task['job_id'] = job_id
-        self.jobs[job_id] = ("running", -1)
-
-        self.tasks_queue.put(task)
 
         with self.lock:
             self.job_counter += 1
+
+        if self.shutdown_event.is_set():
+            self.tasks_status[job_id] = "shutdown"
+            hp.write_result(job_id, data={"job_id": -1, "status": "shutdown"})
+            return job_id
+
+        self.tasks_status[job_id] = "running"
+        self.tasks_queue.put(task)
 
         return job_id
 
@@ -63,11 +70,11 @@ class TaskRunner(Thread):
     """
         Class that represents a thread that responds to different requests
     """
-    def __init__(self, tasks_queue, shutdown_event, jobs, data_ingestor):
+    def __init__(self, tasks_queue, shutdown_event, tasks_status, data_ingestor):
         super().__init__()
         self.tasks_queue = tasks_queue
         self.shutdown_event = shutdown_event
-        self.jobs = jobs
+        self.tasks_status = tasks_status
         self.data_ingestor = data_ingestor
 
     def run(self):
@@ -81,11 +88,12 @@ class TaskRunner(Thread):
 
                 # Execute job
                 job_id = task['job_id']
-                result = self.execute(task)
+                data = self.execute(task)
 
                 # Signal that the job is done
-                self.jobs[job_id] = ("done", result)
-            except Exception:
+                hp.write_result(job_id, data)
+                self.tasks_status[job_id] = "done"
+            except:
                 continue
 
     def execute(self, data):
@@ -175,7 +183,7 @@ class TaskRunner(Thread):
         for state in states_dict:
             state_data = self.data_ingestor.data[question][state]
             for key in state_data:
-                if key not in ('Data_Value', "('', '')"):
+                if key not in ("Data_Value", "('', '')"):
                     new_key = key[0:1] + f"'{state}', " + key[1:]
                     result[new_key] = statistics.mean(state_data[key])
 
