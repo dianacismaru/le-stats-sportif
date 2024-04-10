@@ -10,8 +10,9 @@ class ThreadPool:
     """
         Class that manages a pool of threads that execute different jobs
     """
-    def __init__(self, data_ingestor):
+    def __init__(self, data_ingestor, logger):
         self.data_ingestor = data_ingestor
+        self.logger = logger
         self.threads = []
         self.tasks_queue = Queue()
         self.shutdown_event = Event()
@@ -22,9 +23,11 @@ class ThreadPool:
         num_threads = self.get_num_threads()
         for _ in range(num_threads):
             thread = TaskRunner(self.tasks_queue, self.shutdown_event, self.tasks_status,
-                                self.data_ingestor)
+                                self.data_ingestor, self.logger)
             thread.start()
             self.threads.append(thread)
+
+        self.logger.info(f"ThreadPool has been initialized with {num_threads} threads")
 
     def get_num_threads(self):
         """
@@ -52,6 +55,7 @@ class ThreadPool:
             hp.write_result(job_id, data={"job_id": -1, "status": "shutdown"})
             return job_id
 
+        self.logger.info(f"Job {job_id} has been registered into the queue")
         self.tasks_status[job_id] = "running"
         self.tasks_queue.put(task)
 
@@ -61,21 +65,26 @@ class ThreadPool:
         """
             Gracefully shuts down the thread pool
         """
+        self.logger.info("Gracefully shutting down ThreadPool...")
         self.shutdown_event.set()
 
         for thread in self.threads:
             thread.join()
 
+        import logging
+        logging.shutdown()
+
 class TaskRunner(Thread):
     """
         Class that represents a thread that responds to different requests
     """
-    def __init__(self, tasks_queue, shutdown_event, tasks_status, data_ingestor):
+    def __init__(self, tasks_queue, shutdown_event, tasks_status, data_ingestor, logger):
         super().__init__()
         self.tasks_queue = tasks_queue
         self.shutdown_event = shutdown_event
         self.tasks_status = tasks_status
         self.data_ingestor = data_ingestor
+        self.logger = logger
 
     def run(self):
         while True:
@@ -93,6 +102,7 @@ class TaskRunner(Thread):
                 # Signal that the job is done
                 hp.write_result(job_id, data)
                 self.tasks_status[job_id] = "done"
+                self.logger.info(f"Job {job_id} is done")
             except:
                 continue
 
@@ -102,6 +112,7 @@ class TaskRunner(Thread):
         """
         result = {}
         question = data['question']
+        self.logger.info(f"Executing job {data['job_id']} with question '{question}'")
 
         if data['type'] == hp.STATES_MEAN:
             result = self.states_mean(question)

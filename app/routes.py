@@ -8,21 +8,24 @@ def get_response(job_id):
         Request handler for the get_results endpoint
     """
     job_id = int(job_id)
+    webserver.logger.info("[GET] /api/get_results/%d received", job_id)
 
     # Check if job_id is valid
     if job_id not in webserver.tasks_runner.tasks_status.keys():
-        print("Invalid job id")
-        return jsonify({"error": "invalid job id"})
+        webserver.logger.error("Invalid job ID")
+        return jsonify({"error": "invalid job ID"})
 
     # Check if job_id is done and return the result
     if webserver.tasks_runner.tasks_status[job_id] == "running":
+        webserver.logger.info("Job %d is still running", job_id)
         return jsonify({"status": "running"})
 
     # Extract result from file
     json_result = hp.extract_result(job_id)
 
-    # Check if job_id is shutdown
+    # Check if graceful shutdown was requested
     if webserver.tasks_runner.tasks_status[job_id] == "shutdown":
+        webserver.logger.info("Flask server has been shutdown. No more jobs will be processed")
         return jsonify(json_result)
 
     # Return result from finished task
@@ -37,6 +40,7 @@ def states_mean_request():
         Request handler for the states_mean endpoint
     """
     # Get request data
+    webserver.logger.info("[POST] /api/states_mean received")
     data = request.json
     data['type'] = hp.STATES_MEAN
 
@@ -52,6 +56,7 @@ def state_mean_request():
         Request handler for the state_mean endpoint
     """
     # Get request data
+    webserver.logger.info("[POST] /api/state_mean received")
     data = request.json
     data['type'] = hp.STATE_MEAN
 
@@ -67,6 +72,7 @@ def best5_request():
         Request handler for the best5 endpoint
     """
     # Get request data
+    webserver.logger.info("[POST] /api/best5 received")
     data = request.json
     data['type'] = hp.BEST5
 
@@ -82,6 +88,7 @@ def worst5_request():
         Request handler for the worst5 endpoint
     """
     # Get request data
+    webserver.logger.info("[POST] /api/worst5 received")
     data = request.json
     data['type'] = hp.WORST5
 
@@ -97,6 +104,7 @@ def global_mean_request():
         Request handler for the global_mean endpoint
     """
     # Get request data
+    webserver.logger.info("[POST] /api/global_mean received")
     data = request.json
     data['type'] = hp.GLOBAL_MEAN
 
@@ -112,6 +120,7 @@ def diff_from_mean_request():
         Request handler for the diff_from_mean endpoint
     """
     # Get request data
+    webserver.logger.info("[POST] /api/diff_from_mean received")
     data = request.json
     data['type'] = hp.DIFF_FROM_MEAN
 
@@ -127,6 +136,7 @@ def state_diff_from_mean_request():
         Request handler for the state_diff_from_mean endpoint
     """
     # Get request data
+    webserver.logger.info("[POST] /api/state_diff_from_mean received")
     data = request.json
     data['type'] = hp.STATE_DIFF_FROM_MEAN
 
@@ -142,6 +152,7 @@ def mean_by_category_request():
         Request handler for the mean_by_category_request endpoint
     """
     # Get request data
+    webserver.logger.info("[POST] /api/mean_by_category received")
     data = request.json
     data['type'] = hp.MEAN_BY_CATEGORY
 
@@ -157,6 +168,7 @@ def state_mean_by_category_request():
         Request handler for the state_mean_by_category endpoint
     """
     # Get request data
+    webserver.logger.info("[POST] /api/state_mean_by_category received")
     data = request.json
     data['type'] = hp.STATE_MEAN_BY_CATEGORY
 
@@ -171,6 +183,8 @@ def graceful_shutdown_request():
     """
         Request handler for the graceful_shutdown endpoint
     """
+    webserver.logger.info("[GET] /api/graceful_shutdown received")
+
     webserver.tasks_runner.graceful_shutdown()
 
     return jsonify({"status": "shutdown"})
@@ -180,6 +194,7 @@ def jobs_request():
     """
         Request handler for the jobs endpoint
     """
+    webserver.logger.info("[GET] /api/jobs received")
     jobs = []
     for job_id in webserver.tasks_runner.tasks_status.keys():
         jobs.append({f"job_id_{job_id}": webserver.tasks_runner.tasks_status[job_id]})
@@ -191,6 +206,7 @@ def num_jobs_request():
     """
         Request handler for the num_jobs endpoint
     """
+    webserver.logger.info("[GET] /api/num_jobs received")
     num_jobs = 0
     for job_id in webserver.tasks_runner.tasks_status:
         if webserver.tasks_runner.tasks_status[job_id] == "running":

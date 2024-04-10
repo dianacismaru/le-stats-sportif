@@ -4,7 +4,8 @@ class DataIngestor:
     """
         Class to ingest data from a CSV file and store it in a dictionary.
     """
-    def __init__(self, csv_path: str):
+    def __init__(self, csv_path: str, logger):
+        logger.info("Initializing data ingestor")
         self.data = {}
         self.csv_path = csv_path
 
