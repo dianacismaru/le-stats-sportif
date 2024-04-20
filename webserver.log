@@ -1,1161 +1,903 @@
-2024-04-10 21:10:56,935 - INFO - Initializing data ingestor
-2024-04-10 21:10:57,082 - INFO - ThreadPool has been initialized with 4 threads
-2024-04-10 21:10:57,082 - INFO - Starting to get requests...
+2024-04-10 21:59:38,208 - INFO - Initializing data ingestor
+2024-04-10 21:59:38,373 - INFO - ThreadPool has been initialized with 4 threads
+2024-04-10 21:59:38,373 - INFO - Starting to get requests...
 
-2024-04-10 21:11:00,491 - INFO - [POST] /api/best5 received
-2024-04-10 21:11:00,491 - INFO - Job 1 has been registered into the queue
-2024-04-10 21:11:00,492 - INFO - Executing job 1 with question 'Percent of adults who engage in muscle-strengthening activities on 2 or more days a week'
-2024-04-10 21:11:00,494 - INFO - Job 1 is done
-2024-04-10 21:11:00,496 - INFO - [GET] /api/get_results/1 received
-2024-04-10 21:11:00,499 - INFO - [POST] /api/best5 received
-2024-04-10 21:11:00,499 - INFO - Job 2 has been registered into the queue
-2024-04-10 21:11:00,500 - INFO - Executing job 2 with question 'Percent of adults aged 18 years and older who have obesity'
-2024-04-10 21:11:00,505 - INFO - Job 2 is done
-2024-04-10 21:11:00,507 - INFO - [GET] /api/get_results/2 received
-2024-04-10 21:11:00,510 - INFO - [POST] /api/best5 received
-2024-04-10 21:11:00,510 - INFO - Job 3 has been registered into the queue
-2024-04-10 21:11:00,511 - INFO - Executing job 3 with question 'Percent of adults who achieve at least 300 minutes a week of moderate-intensity aerobic physical activity or 150 minutes a week of vigorous-intensity aerobic activity (or an equivalent combination)'
-2024-04-10 21:11:00,515 - INFO - Job 3 is done
-2024-04-10 21:11:00,516 - INFO - [GET] /api/get_results/3 received
-2024-04-10 21:11:00,520 - INFO - [POST] /api/best5 received
-2024-04-10 21:11:00,520 - INFO - Job 4 has been registered into the queue
-2024-04-10 21:11:00,521 - INFO - Executing job 4 with question 'Percent of adults who report consuming fruit less than one time daily'
-2024-04-10 21:11:00,523 - INFO - Job 4 is done
-2024-04-10 21:11:00,524 - INFO - [GET] /api/get_results/4 received
-2024-04-10 21:11:00,527 - INFO - [POST] /api/best5 received
-2024-04-10 21:11:00,527 - INFO - Job 5 has been registered into the queue
-2024-04-10 21:11:00,528 - INFO - Executing job 5 with question 'Percent of adults who engage in no leisure-time physical activity'
-2024-04-10 21:11:00,534 - INFO - Job 5 is done
-2024-04-10 21:11:00,535 - INFO - [GET] /api/get_results/5 received
-2024-04-10 21:11:00,538 - INFO - [POST] /api/best5 received
-2024-04-10 21:11:00,538 - INFO - Job 6 has been registered into the queue
-2024-04-10 21:11:00,538 - INFO - Executing job 6 with question 'Percent of adults who achieve at least 150 minutes a week of moderate-intensity aerobic physical activity or 75 minutes a week of vigorous-intensity aerobic activity (or an equivalent combination)'
-2024-04-10 21:11:00,540 - INFO - Job 6 is done
-2024-04-10 21:11:00,542 - INFO - [GET] /api/get_results/6 received
-2024-04-10 21:11:00,545 - INFO - [POST] /api/best5 received
-2024-04-10 21:11:00,545 - INFO - Job 7 has been registered into the queue
-2024-04-10 21:11:00,545 - INFO - Executing job 7 with question 'Percent of adults who report consuming vegetables less than one time daily'
-2024-04-10 21:11:00,548 - INFO - Job 7 is done
-2024-04-10 21:11:00,549 - INFO - [GET] /api/get_results/7 received
-2024-04-10 21:11:00,552 - INFO - [POST] /api/best5 received
-2024-04-10 21:11:00,552 - INFO - Job 8 has been registered into the queue
-2024-04-10 21:11:00,553 - INFO - Executing job 8 with question 'Percent of adults who achieve at least 150 minutes a week of moderate-intensity aerobic physical activity or 75 minutes a week of vigorous-intensity aerobic physical activity and engage in muscle-strengthening activities on 2 or more days a week'
-2024-04-10 21:11:00,555 - INFO - Job 8 is done
-2024-04-10 21:11:00,556 - INFO - [GET] /api/get_results/8 received
-2024-04-10 21:11:00,559 - INFO - [POST] /api/best5 received
-2024-04-10 21:11:00,560 - INFO - Job 9 has been registered into the queue
-2024-04-10 21:11:00,560 - INFO - Executing job 9 with question 'Percent of adults aged 18 years and older who have an overweight classification'
-2024-04-10 21:11:00,565 - INFO - Job 9 is done
-2024-04-10 21:11:00,567 - INFO - [GET] /api/get_results/9 received
-2024-04-10 21:11:03,918 - INFO - [POST] /api/diff_from_mean received
-2024-04-10 21:11:03,918 - INFO - Job 10 has been registered into the queue
-2024-04-10 21:11:03,919 - INFO - Executing job 10 with question 'Percent of adults who engage in muscle-strengthening activities on 2 or more days a week'
-2024-04-10 21:11:03,924 - INFO - Job 10 is done
-2024-04-10 21:11:03,926 - INFO - [GET] /api/get_results/10 received
-2024-04-10 21:11:03,932 - INFO - [POST] /api/diff_from_mean received
-2024-04-10 21:11:03,932 - INFO - Job 11 has been registered into the queue
-2024-04-10 21:11:03,933 - INFO - Executing job 11 with question 'Percent of adults aged 18 years and older who have obesity'
-2024-04-10 21:11:03,938 - INFO - Job 11 is done
-2024-04-10 21:11:03,940 - INFO - [GET] /api/get_results/11 received
-2024-04-10 21:11:03,949 - INFO - [POST] /api/diff_from_mean received
-2024-04-10 21:11:03,949 - INFO - Job 12 has been registered into the queue
-2024-04-10 21:11:03,950 - INFO - Executing job 12 with question 'Percent of adults who achieve at least 300 minutes a week of moderate-intensity aerobic physical activity or 150 minutes a week of vigorous-intensity aerobic activity (or an equivalent combination)'
-2024-04-10 21:11:03,954 - INFO - Job 12 is done
-2024-04-10 21:11:03,956 - INFO - [GET] /api/get_results/12 received
-2024-04-10 21:11:03,962 - INFO - [POST] /api/diff_from_mean received
-2024-04-10 21:11:03,962 - INFO - Job 13 has been registered into the queue
-2024-04-10 21:11:03,963 - INFO - Executing job 13 with question 'Percent of adults who report consuming fruit less than one time daily'
-2024-04-10 21:11:03,965 - INFO - Job 13 is done
-2024-04-10 21:11:03,967 - INFO - [GET] /api/get_results/13 received
-2024-04-10 21:11:03,975 - INFO - [POST] /api/diff_from_mean received
-2024-04-10 21:11:03,975 - INFO - Job 14 has been registered into the queue
-2024-04-10 21:11:03,976 - INFO - Executing job 14 with question 'Percent of adults who engage in no leisure-time physical activity'
-2024-04-10 21:11:03,982 - INFO - Job 14 is done
-2024-04-10 21:11:03,984 - INFO - [GET] /api/get_results/14 received
-2024-04-10 21:11:03,991 - INFO - [POST] /api/diff_from_mean received
-2024-04-10 21:11:03,991 - INFO - Job 15 has been registered into the queue
-2024-04-10 21:11:03,992 - INFO - Executing job 15 with question 'Percent of adults who achieve at least 150 minutes a week of moderate-intensity aerobic physical activity or 75 minutes a week of vigorous-intensity aerobic activity (or an equivalent combination)'
-2024-04-10 21:11:03,996 - INFO - Job 15 is done
-2024-04-10 21:11:03,999 - INFO - [GET] /api/get_results/15 received
-2024-04-10 21:11:04,003 - INFO - [POST] /api/diff_from_mean received
-2024-04-10 21:11:04,004 - INFO - Job 16 has been registered into the queue
-2024-04-10 21:11:04,004 - INFO - Executing job 16 with question 'Percent of adults who report consuming vegetables less than one time daily'
-2024-04-10 21:11:04,008 - INFO - Job 16 is done
-2024-04-10 21:11:04,010 - INFO - [GET] /api/get_results/16 received
-2024-04-10 21:11:04,014 - INFO - [POST] /api/diff_from_mean received
-2024-04-10 21:11:04,014 - INFO - Job 17 has been registered into the queue
-2024-04-10 21:11:04,015 - INFO - Executing job 17 with question 'Percent of adults who achieve at least 150 minutes a week of moderate-intensity aerobic physical activity or 75 minutes a week of vigorous-intensity aerobic physical activity and engage in muscle-strengthening activities on 2 or more days a week'
-2024-04-10 21:11:04,017 - INFO - Job 17 is done
-2024-04-10 21:11:04,019 - INFO - [GET] /api/get_results/17 received
-2024-04-10 21:11:04,023 - INFO - [POST] /api/diff_from_mean received
-2024-04-10 21:11:04,023 - INFO - Job 18 has been registered into the queue
-2024-04-10 21:11:04,024 - INFO - Executing job 18 with question 'Percent of adults aged 18 years and older who have an overweight classification'
-2024-04-10 21:11:04,027 - INFO - Job 18 is done
-2024-04-10 21:11:04,029 - INFO - [GET] /api/get_results/18 received
-2024-04-10 21:11:04,038 - INFO - [POST] /api/global_mean received
-2024-04-10 21:11:04,039 - INFO - Job 19 has been registered into the queue
-2024-04-10 21:11:04,040 - INFO - Executing job 19 with question 'Percent of adults who engage in muscle-strengthening activities on 2 or more days a week'
-2024-04-10 21:11:04,040 - INFO - Job 19 is done
-2024-04-10 21:11:04,044 - INFO - [GET] /api/get_results/19 received
-2024-04-10 21:11:04,048 - INFO - [POST] /api/global_mean received
-2024-04-10 21:11:04,049 - INFO - Job 20 has been registered into the queue
-2024-04-10 21:11:04,050 - INFO - Executing job 20 with question 'Percent of adults aged 18 years and older who have obesity'
-2024-04-10 21:11:04,050 - INFO - Job 20 is done
-2024-04-10 21:11:04,053 - INFO - [GET] /api/get_results/20 received
-2024-04-10 21:11:04,057 - INFO - [POST] /api/global_mean received
-2024-04-10 21:11:04,057 - INFO - Job 21 has been registered into the queue
-2024-04-10 21:11:04,058 - INFO - Executing job 21 with question 'Percent of adults who achieve at least 300 minutes a week of moderate-intensity aerobic physical activity or 150 minutes a week of vigorous-intensity aerobic activity (or an equivalent combination)'
-2024-04-10 21:11:04,058 - INFO - Job 21 is done
-2024-04-10 21:11:04,062 - INFO - [GET] /api/get_results/21 received
-2024-04-10 21:11:04,066 - INFO - [POST] /api/global_mean received
-2024-04-10 21:11:04,066 - INFO - Job 22 has been registered into the queue
-2024-04-10 21:11:04,067 - INFO - Executing job 22 with question 'Percent of adults who report consuming fruit less than one time daily'
-2024-04-10 21:11:04,067 - INFO - Job 22 is done
-2024-04-10 21:11:04,069 - INFO - [GET] /api/get_results/22 received
-2024-04-10 21:11:04,074 - INFO - [POST] /api/global_mean received
-2024-04-10 21:11:04,074 - INFO - Job 23 has been registered into the queue
-2024-04-10 21:11:04,075 - INFO - Executing job 23 with question 'Percent of adults who engage in no leisure-time physical activity'
-2024-04-10 21:11:04,075 - INFO - Job 23 is done
-2024-04-10 21:11:04,079 - INFO - [GET] /api/get_results/23 received
-2024-04-10 21:11:04,082 - INFO - [POST] /api/global_mean received
-2024-04-10 21:11:04,082 - INFO - Job 24 has been registered into the queue
-2024-04-10 21:11:04,083 - INFO - Executing job 24 with question 'Percent of adults who achieve at least 150 minutes a week of moderate-intensity aerobic physical activity or 75 minutes a week of vigorous-intensity aerobic activity (or an equivalent combination)'
-2024-04-10 21:11:04,083 - INFO - Job 24 is done
-2024-04-10 21:11:04,087 - INFO - [GET] /api/get_results/24 received
-2024-04-10 21:11:04,091 - INFO - [POST] /api/global_mean received
-2024-04-10 21:11:04,091 - INFO - Job 25 has been registered into the queue
-2024-04-10 21:11:04,092 - INFO - Executing job 25 with question 'Percent of adults who report consuming vegetables less than one time daily'
-2024-04-10 21:11:04,093 - INFO - Job 25 is done
-2024-04-10 21:11:04,098 - INFO - [GET] /api/get_results/25 received
-2024-04-10 21:11:04,102 - INFO - [POST] /api/global_mean received
-2024-04-10 21:11:04,102 - INFO - Job 26 has been registered into the queue
-2024-04-10 21:11:04,103 - INFO - Executing job 26 with question 'Percent of adults who achieve at least 150 minutes a week of moderate-intensity aerobic physical activity or 75 minutes a week of vigorous-intensity aerobic physical activity and engage in muscle-strengthening activities on 2 or more days a week'
-2024-04-10 21:11:04,103 - INFO - Job 26 is done
-2024-04-10 21:11:04,107 - INFO - [GET] /api/get_results/26 received
-2024-04-10 21:11:04,111 - INFO - [POST] /api/global_mean received
-2024-04-10 21:11:04,111 - INFO - Job 27 has been registered into the queue
-2024-04-10 21:11:04,112 - INFO - Executing job 27 with question 'Percent of adults aged 18 years and older who have an overweight classification'
-2024-04-10 21:11:04,113 - INFO - Job 27 is done
-2024-04-10 21:11:04,115 - INFO - [GET] /api/get_results/27 received
-2024-04-10 21:11:04,121 - INFO - [POST] /api/mean_by_category received
-2024-04-10 21:11:04,121 - INFO - Job 28 has been registered into the queue
-2024-04-10 21:11:04,122 - INFO - Executing job 28 with question 'Percent of adults who engage in muscle-strengthening activities on 2 or more days a week'
-2024-04-10 21:11:04,137 - INFO - [GET] /api/get_results/28 received
-2024-04-10 21:11:04,137 - INFO - Job 28 is done
-2024-04-10 21:11:04,167 - INFO - [POST] /api/mean_by_category received
-2024-04-10 21:11:04,168 - INFO - Job 29 has been registered into the queue
-2024-04-10 21:11:04,168 - INFO - Executing job 29 with question 'Percent of adults aged 18 years and older who have obesity'
-2024-04-10 21:11:04,174 - INFO - [GET] /api/get_results/29 received
-2024-04-10 21:11:04,187 - INFO - Job 29 is done
-2024-04-10 21:11:04,219 - INFO - [POST] /api/mean_by_category received
-2024-04-10 21:11:04,219 - INFO - Job 30 has been registered into the queue
-2024-04-10 21:11:04,219 - INFO - Executing job 30 with question 'Percent of adults who achieve at least 300 minutes a week of moderate-intensity aerobic physical activity or 150 minutes a week of vigorous-intensity aerobic activity (or an equivalent combination)'
-2024-04-10 21:11:04,230 - INFO - [GET] /api/get_results/30 received
-2024-04-10 21:11:04,230 - INFO - Job 30 is done
-2024-04-10 21:11:04,251 - INFO - [POST] /api/mean_by_category received
-2024-04-10 21:11:04,251 - INFO - Job 31 has been registered into the queue
-2024-04-10 21:11:04,252 - INFO - Executing job 31 with question 'Percent of adults who report consuming fruit less than one time daily'
-2024-04-10 21:11:04,259 - INFO - Job 31 is done
-2024-04-10 21:11:04,261 - INFO - [GET] /api/get_results/31 received
-2024-04-10 21:11:04,285 - INFO - [POST] /api/mean_by_category received
-2024-04-10 21:11:04,285 - INFO - Job 32 has been registered into the queue
-2024-04-10 21:11:04,285 - INFO - Executing job 32 with question 'Percent of adults who engage in no leisure-time physical activity'
-2024-04-10 21:11:04,317 - INFO - [GET] /api/get_results/32 received
-2024-04-10 21:11:04,319 - INFO - Job 32 is still running
-2024-04-10 21:11:04,322 - INFO - Job 32 is done
-2024-04-10 21:11:04,525 - INFO - [GET] /api/get_results/32 received
-2024-04-10 21:11:04,574 - INFO - [POST] /api/mean_by_category received
-2024-04-10 21:11:04,574 - INFO - Job 33 has been registered into the queue
-2024-04-10 21:11:04,575 - INFO - Executing job 33 with question 'Percent of adults who achieve at least 150 minutes a week of moderate-intensity aerobic physical activity or 75 minutes a week of vigorous-intensity aerobic activity (or an equivalent combination)'
-2024-04-10 21:11:04,595 - INFO - [GET] /api/get_results/33 received
-2024-04-10 21:11:04,596 - INFO - Job 33 is still running
-2024-04-10 21:11:04,596 - INFO - Job 33 is done
-2024-04-10 21:11:04,804 - INFO - [GET] /api/get_results/33 received
-2024-04-10 21:11:04,905 - INFO - [POST] /api/mean_by_category received
-2024-04-10 21:11:04,905 - INFO - Job 34 has been registered into the queue
-2024-04-10 21:11:04,906 - INFO - Executing job 34 with question 'Percent of adults who report consuming vegetables less than one time daily'
-2024-04-10 21:11:04,916 - INFO - Job 34 is done
-2024-04-10 21:11:04,917 - INFO - [GET] /api/get_results/34 received
-2024-04-10 21:11:04,942 - INFO - [POST] /api/mean_by_category received
-2024-04-10 21:11:04,942 - INFO - Job 35 has been registered into the queue
-2024-04-10 21:11:04,942 - INFO - Executing job 35 with question 'Percent of adults who achieve at least 150 minutes a week of moderate-intensity aerobic physical activity or 75 minutes a week of vigorous-intensity aerobic physical activity and engage in muscle-strengthening activities on 2 or more days a week'
-2024-04-10 21:11:04,956 - INFO - [GET] /api/get_results/35 received
-2024-04-10 21:11:04,956 - INFO - Job 35 is still running
-2024-04-10 21:11:04,956 - INFO - Job 35 is done
-2024-04-10 21:11:05,162 - INFO - [GET] /api/get_results/35 received
-2024-04-10 21:11:05,259 - INFO - [POST] /api/mean_by_category received
-2024-04-10 21:11:05,259 - INFO - Job 36 has been registered into the queue
-2024-04-10 21:11:05,260 - INFO - Executing job 36 with question 'Percent of adults aged 18 years and older who have an overweight classification'
-2024-04-10 21:11:05,282 - INFO - [GET] /api/get_results/36 received
-2024-04-10 21:11:05,296 - INFO - Job 36 is still running
-2024-04-10 21:11:05,299 - INFO - Job 36 is done
-2024-04-10 21:11:05,506 - INFO - [GET] /api/get_results/36 received
-2024-04-10 21:11:05,653 - INFO - [POST] /api/state_diff_from_mean received
-2024-04-10 21:11:05,654 - INFO - Job 37 has been registered into the queue
-2024-04-10 21:11:05,655 - INFO - Executing job 37 with question 'Percent of adults who report consuming vegetables less than one time daily'
-2024-04-10 21:11:05,656 - INFO - Job 37 is done
-2024-04-10 21:11:05,658 - INFO - [GET] /api/get_results/37 received
-2024-04-10 21:11:05,661 - INFO - [POST] /api/state_diff_from_mean received
-2024-04-10 21:11:05,662 - INFO - Job 38 has been registered into the queue
-2024-04-10 21:11:05,662 - INFO - Executing job 38 with question 'Percent of adults who report consuming vegetables less than one time daily'
-2024-04-10 21:11:05,663 - INFO - Job 38 is done
-2024-04-10 21:11:05,665 - INFO - [GET] /api/get_results/38 received
-2024-04-10 21:11:05,671 - INFO - [POST] /api/state_diff_from_mean received
-2024-04-10 21:11:05,672 - INFO - Job 39 has been registered into the queue
-2024-04-10 21:11:05,673 - INFO - Executing job 39 with question 'Percent of adults who achieve at least 300 minutes a week of moderate-intensity aerobic physical activity or 150 minutes a week of vigorous-intensity aerobic activity (or an equivalent combination)'
-2024-04-10 21:11:05,674 - INFO - Job 39 is done
-2024-04-10 21:11:05,679 - INFO - [GET] /api/get_results/39 received
-2024-04-10 21:11:05,685 - INFO - [POST] /api/state_diff_from_mean received
-2024-04-10 21:11:05,686 - INFO - Job 40 has been registered into the queue
-2024-04-10 21:11:05,686 - INFO - Executing job 40 with question 'Percent of adults who report consuming vegetables less than one time daily'
-2024-04-10 21:11:05,687 - INFO - Job 40 is done
-2024-04-10 21:11:05,690 - INFO - [GET] /api/get_results/40 received
-2024-04-10 21:11:05,695 - INFO - [POST] /api/state_diff_from_mean received
-2024-04-10 21:11:05,697 - INFO - Job 41 has been registered into the queue
-2024-04-10 21:11:05,698 - INFO - Executing job 41 with question 'Percent of adults who engage in muscle-strengthening activities on 2 or more days a week'
-2024-04-10 21:11:05,698 - INFO - Job 41 is done
-2024-04-10 21:11:05,702 - INFO - [GET] /api/get_results/41 received
-2024-04-10 21:11:05,705 - INFO - [POST] /api/state_diff_from_mean received
-2024-04-10 21:11:05,705 - INFO - Job 42 has been registered into the queue
-2024-04-10 21:11:05,706 - INFO - Executing job 42 with question 'Percent of adults who achieve at least 300 minutes a week of moderate-intensity aerobic physical activity or 150 minutes a week of vigorous-intensity aerobic activity (or an equivalent combination)'
-2024-04-10 21:11:05,706 - INFO - Job 42 is done
-2024-04-10 21:11:05,709 - INFO - [GET] /api/get_results/42 received
-2024-04-10 21:11:05,712 - INFO - [POST] /api/state_diff_from_mean received
-2024-04-10 21:11:05,713 - INFO - Job 43 has been registered into the queue
-2024-04-10 21:11:05,713 - INFO - Executing job 43 with question 'Percent of adults who report consuming vegetables less than one time daily'
-2024-04-10 21:11:05,714 - INFO - Job 43 is done
-2024-04-10 21:11:05,716 - INFO - [GET] /api/get_results/43 received
-2024-04-10 21:11:05,720 - INFO - [POST] /api/state_diff_from_mean received
-2024-04-10 21:11:05,720 - INFO - Job 44 has been registered into the queue
-2024-04-10 21:11:05,720 - INFO - Executing job 44 with question 'Percent of adults who report consuming vegetables less than one time daily'
-2024-04-10 21:11:05,721 - INFO - Job 44 is done
-2024-04-10 21:11:05,723 - INFO - [GET] /api/get_results/44 received
-2024-04-10 21:11:05,726 - INFO - [POST] /api/state_diff_from_mean received
-2024-04-10 21:11:05,727 - INFO - Job 45 has been registered into the queue
-2024-04-10 21:11:05,727 - INFO - Executing job 45 with question 'Percent of adults who achieve at least 300 minutes a week of moderate-intensity aerobic physical activity or 150 minutes a week of vigorous-intensity aerobic activity (or an equivalent combination)'
-2024-04-10 21:11:05,728 - INFO - Job 45 is done
-2024-04-10 21:11:05,730 - INFO - [GET] /api/get_results/45 received
-2024-04-10 21:11:05,733 - INFO - [POST] /api/state_diff_from_mean received
-2024-04-10 21:11:05,734 - INFO - Job 46 has been registered into the queue
-2024-04-10 21:11:05,734 - INFO - Executing job 46 with question 'Percent of adults who achieve at least 300 minutes a week of moderate-intensity aerobic physical activity or 150 minutes a week of vigorous-intensity aerobic activity (or an equivalent combination)'
-2024-04-10 21:11:05,735 - INFO - Job 46 is done
-2024-04-10 21:11:05,738 - INFO - [GET] /api/get_results/46 received
-2024-04-10 21:11:05,742 - INFO - [POST] /api/state_diff_from_mean received
-2024-04-10 21:11:05,742 - INFO - Job 47 has been registered into the queue
-2024-04-10 21:11:05,743 - INFO - Executing job 47 with question 'Percent of adults who engage in muscle-strengthening activities on 2 or more days a week'
-2024-04-10 21:11:05,743 - INFO - Job 47 is done
-2024-04-10 21:11:05,746 - INFO - [GET] /api/get_results/47 received
-2024-04-10 21:11:05,749 - INFO - [POST] /api/state_diff_from_mean received
-2024-04-10 21:11:05,749 - INFO - Job 48 has been registered into the queue
-2024-04-10 21:11:05,750 - INFO - Executing job 48 with question 'Percent of adults who achieve at least 300 minutes a week of moderate-intensity aerobic physical activity or 150 minutes a week of vigorous-intensity aerobic activity (or an equivalent combination)'
-2024-04-10 21:11:05,751 - INFO - Job 48 is done
-2024-04-10 21:11:05,753 - INFO - [GET] /api/get_results/48 received
-2024-04-10 21:11:05,756 - INFO - [POST] /api/state_diff_from_mean received
-2024-04-10 21:11:05,756 - INFO - Job 49 has been registered into the queue
-2024-04-10 21:11:05,757 - INFO - Executing job 49 with question 'Percent of adults who achieve at least 300 minutes a week of moderate-intensity aerobic physical activity or 150 minutes a week of vigorous-intensity aerobic activity (or an equivalent combination)'
-2024-04-10 21:11:05,758 - INFO - Job 49 is done
-2024-04-10 21:11:05,760 - INFO - [GET] /api/get_results/49 received
-2024-04-10 21:11:05,763 - INFO - [POST] /api/state_diff_from_mean received
-2024-04-10 21:11:05,763 - INFO - Job 50 has been registered into the queue
-2024-04-10 21:11:05,764 - INFO - Executing job 50 with question 'Percent of adults who engage in muscle-strengthening activities on 2 or more days a week'
-2024-04-10 21:11:05,765 - INFO - Job 50 is done
-2024-04-10 21:11:05,766 - INFO - [GET] /api/get_results/50 received
-2024-04-10 21:11:05,770 - INFO - [POST] /api/state_diff_from_mean received
-2024-04-10 21:11:05,770 - INFO - Job 51 has been registered into the queue
-2024-04-10 21:11:05,771 - INFO - Executing job 51 with question 'Percent of adults who report consuming vegetables less than one time daily'
-2024-04-10 21:11:05,771 - INFO - Job 51 is done
-2024-04-10 21:11:05,774 - INFO - [GET] /api/get_results/51 received
-2024-04-10 21:11:05,778 - INFO - [POST] /api/state_diff_from_mean received
-2024-04-10 21:11:05,778 - INFO - Job 52 has been registered into the queue
-2024-04-10 21:11:05,778 - INFO - Executing job 52 with question 'Percent of adults who engage in muscle-strengthening activities on 2 or more days a week'
-2024-04-10 21:11:05,779 - INFO - Job 52 is done
-2024-04-10 21:11:05,781 - INFO - [GET] /api/get_results/52 received
-2024-04-10 21:11:05,784 - INFO - [POST] /api/state_diff_from_mean received
-2024-04-10 21:11:05,785 - INFO - Job 53 has been registered into the queue
-2024-04-10 21:11:05,785 - INFO - Executing job 53 with question 'Percent of adults who achieve at least 300 minutes a week of moderate-intensity aerobic physical activity or 150 minutes a week of vigorous-intensity aerobic activity (or an equivalent combination)'
-2024-04-10 21:11:05,786 - INFO - Job 53 is done
-2024-04-10 21:11:05,788 - INFO - [GET] /api/get_results/53 received
-2024-04-10 21:11:05,792 - INFO - [POST] /api/state_diff_from_mean received
-2024-04-10 21:11:05,792 - INFO - Job 54 has been registered into the queue
-2024-04-10 21:11:05,793 - INFO - Executing job 54 with question 'Percent of adults who achieve at least 300 minutes a week of moderate-intensity aerobic physical activity or 150 minutes a week of vigorous-intensity aerobic activity (or an equivalent combination)'
-2024-04-10 21:11:05,794 - INFO - Job 54 is done
-2024-04-10 21:11:05,796 - INFO - [GET] /api/get_results/54 received
-2024-04-10 21:11:05,800 - INFO - [POST] /api/state_diff_from_mean received
-2024-04-10 21:11:05,800 - INFO - Job 55 has been registered into the queue
-2024-04-10 21:11:05,801 - INFO - Executing job 55 with question 'Percent of adults who report consuming vegetables less than one time daily'
-2024-04-10 21:11:05,801 - INFO - Job 55 is done
-2024-04-10 21:11:05,805 - INFO - [GET] /api/get_results/55 received
-2024-04-10 21:11:05,809 - INFO - [POST] /api/state_diff_from_mean received
-2024-04-10 21:11:05,809 - INFO - Job 56 has been registered into the queue
-2024-04-10 21:11:05,810 - INFO - Executing job 56 with question 'Percent of adults who report consuming vegetables less than one time daily'
-2024-04-10 21:11:05,811 - INFO - Job 56 is done
-2024-04-10 21:11:05,814 - INFO - [GET] /api/get_results/56 received
-2024-04-10 21:11:05,821 - INFO - [POST] /api/state_mean received
-2024-04-10 21:11:05,822 - INFO - Job 57 has been registered into the queue
-2024-04-10 21:11:05,822 - INFO - Executing job 57 with question 'Percent of adults who achieve at least 150 minutes a week of moderate-intensity aerobic physical activity or 75 minutes a week of vigorous-intensity aerobic activity (or an equivalent combination)'
-2024-04-10 21:11:05,823 - INFO - Job 57 is done
-2024-04-10 21:11:05,826 - INFO - [GET] /api/get_results/57 received
-2024-04-10 21:11:05,830 - INFO - [POST] /api/state_mean received
-2024-04-10 21:11:05,830 - INFO - Job 58 has been registered into the queue
-2024-04-10 21:11:05,831 - INFO - Executing job 58 with question 'Percent of adults who achieve at least 150 minutes a week of moderate-intensity aerobic physical activity or 75 minutes a week of vigorous-intensity aerobic activity (or an equivalent combination)'
-2024-04-10 21:11:05,832 - INFO - Job 58 is done
-2024-04-10 21:11:05,836 - INFO - [GET] /api/get_results/58 received
-2024-04-10 21:11:05,843 - INFO - [POST] /api/state_mean received
-2024-04-10 21:11:05,843 - INFO - Job 59 has been registered into the queue
-2024-04-10 21:11:05,844 - INFO - Executing job 59 with question 'Percent of adults who achieve at least 150 minutes a week of moderate-intensity aerobic physical activity or 75 minutes a week of vigorous-intensity aerobic physical activity and engage in muscle-strengthening activities on 2 or more days a week'
-2024-04-10 21:11:05,845 - INFO - Job 59 is done
-2024-04-10 21:11:05,847 - INFO - [GET] /api/get_results/59 received
-2024-04-10 21:11:05,850 - INFO - [POST] /api/state_mean received
-2024-04-10 21:11:05,850 - INFO - Job 60 has been registered into the queue
-2024-04-10 21:11:05,851 - INFO - Executing job 60 with question 'Percent of adults who achieve at least 150 minutes a week of moderate-intensity aerobic physical activity or 75 minutes a week of vigorous-intensity aerobic activity (or an equivalent combination)'
-2024-04-10 21:11:05,851 - INFO - Job 60 is done
-2024-04-10 21:11:05,853 - INFO - [GET] /api/get_results/60 received
-2024-04-10 21:11:05,856 - INFO - [POST] /api/state_mean received
-2024-04-10 21:11:05,856 - INFO - Job 61 has been registered into the queue
-2024-04-10 21:11:05,856 - INFO - Executing job 61 with question 'Percent of adults aged 18 years and older who have an overweight classification'
-2024-04-10 21:11:05,857 - INFO - Job 61 is done
-2024-04-10 21:11:05,859 - INFO - [GET] /api/get_results/61 received
-2024-04-10 21:11:05,862 - INFO - [POST] /api/state_mean received
-2024-04-10 21:11:05,862 - INFO - Job 62 has been registered into the queue
-2024-04-10 21:11:05,862 - INFO - Executing job 62 with question 'Percent of adults who achieve at least 150 minutes a week of moderate-intensity aerobic physical activity or 75 minutes a week of vigorous-intensity aerobic physical activity and engage in muscle-strengthening activities on 2 or more days a week'
-2024-04-10 21:11:05,863 - INFO - Job 62 is done
-2024-04-10 21:11:05,865 - INFO - [GET] /api/get_results/62 received
-2024-04-10 21:11:05,868 - INFO - [POST] /api/state_mean received
-2024-04-10 21:11:05,869 - INFO - Job 63 has been registered into the queue
-2024-04-10 21:11:05,869 - INFO - Executing job 63 with question 'Percent of adults who achieve at least 150 minutes a week of moderate-intensity aerobic physical activity or 75 minutes a week of vigorous-intensity aerobic activity (or an equivalent combination)'
-2024-04-10 21:11:05,870 - INFO - Job 63 is done
-2024-04-10 21:11:05,871 - INFO - [GET] /api/get_results/63 received
-2024-04-10 21:11:05,874 - INFO - [POST] /api/state_mean received
-2024-04-10 21:11:05,874 - INFO - Job 64 has been registered into the queue
-2024-04-10 21:11:05,875 - INFO - Executing job 64 with question 'Percent of adults who achieve at least 150 minutes a week of moderate-intensity aerobic physical activity or 75 minutes a week of vigorous-intensity aerobic activity (or an equivalent combination)'
-2024-04-10 21:11:05,875 - INFO - Job 64 is done
-2024-04-10 21:11:05,877 - INFO - [GET] /api/get_results/64 received
-2024-04-10 21:11:05,880 - INFO - [POST] /api/state_mean received
-2024-04-10 21:11:05,880 - INFO - Job 65 has been registered into the queue
-2024-04-10 21:11:05,881 - INFO - Executing job 65 with question 'Percent of adults who achieve at least 150 minutes a week of moderate-intensity aerobic physical activity or 75 minutes a week of vigorous-intensity aerobic physical activity and engage in muscle-strengthening activities on 2 or more days a week'
-2024-04-10 21:11:05,881 - INFO - Job 65 is done
-2024-04-10 21:11:05,883 - INFO - [GET] /api/get_results/65 received
-2024-04-10 21:11:05,886 - INFO - [POST] /api/state_mean received
-2024-04-10 21:11:05,887 - INFO - Job 66 has been registered into the queue
-2024-04-10 21:11:05,887 - INFO - Executing job 66 with question 'Percent of adults who report consuming vegetables less than one time daily'
-2024-04-10 21:11:05,888 - INFO - Job 66 is done
-2024-04-10 21:11:05,890 - INFO - [GET] /api/get_results/66 received
-2024-04-10 21:11:05,892 - INFO - [POST] /api/state_mean received
-2024-04-10 21:11:05,893 - INFO - Job 67 has been registered into the queue
-2024-04-10 21:11:05,893 - INFO - Executing job 67 with question 'Percent of adults aged 18 years and older who have an overweight classification'
-2024-04-10 21:11:05,894 - INFO - Job 67 is done
-2024-04-10 21:11:05,896 - INFO - [GET] /api/get_results/67 received
-2024-04-10 21:11:05,899 - INFO - [POST] /api/state_mean received
-2024-04-10 21:11:05,899 - INFO - Job 68 has been registered into the queue
-2024-04-10 21:11:05,900 - INFO - Executing job 68 with question 'Percent of adults who report consuming vegetables less than one time daily'
-2024-04-10 21:11:05,900 - INFO - Job 68 is done
-2024-04-10 21:11:05,902 - INFO - [GET] /api/get_results/68 received
-2024-04-10 21:11:05,905 - INFO - [POST] /api/state_mean received
-2024-04-10 21:11:05,906 - INFO - Job 69 has been registered into the queue
-2024-04-10 21:11:05,906 - INFO - Executing job 69 with question 'Percent of adults who achieve at least 150 minutes a week of moderate-intensity aerobic physical activity or 75 minutes a week of vigorous-intensity aerobic physical activity and engage in muscle-strengthening activities on 2 or more days a week'
-2024-04-10 21:11:05,906 - INFO - Job 69 is done
-2024-04-10 21:11:05,908 - INFO - [GET] /api/get_results/69 received
-2024-04-10 21:11:05,912 - INFO - [POST] /api/state_mean received
-2024-04-10 21:11:05,912 - INFO - Job 70 has been registered into the queue
-2024-04-10 21:11:05,912 - INFO - Executing job 70 with question 'Percent of adults aged 18 years and older who have an overweight classification'
-2024-04-10 21:11:05,913 - INFO - Job 70 is done
-2024-04-10 21:11:05,914 - INFO - [GET] /api/get_results/70 received
-2024-04-10 21:11:05,917 - INFO - [POST] /api/state_mean received
-2024-04-10 21:11:05,917 - INFO - Job 71 has been registered into the queue
-2024-04-10 21:11:05,918 - INFO - Executing job 71 with question 'Percent of adults who achieve at least 150 minutes a week of moderate-intensity aerobic physical activity or 75 minutes a week of vigorous-intensity aerobic activity (or an equivalent combination)'
-2024-04-10 21:11:05,918 - INFO - Job 71 is done
-2024-04-10 21:11:05,920 - INFO - [GET] /api/get_results/71 received
-2024-04-10 21:11:05,922 - INFO - [POST] /api/state_mean received
-2024-04-10 21:11:05,923 - INFO - Job 72 has been registered into the queue
-2024-04-10 21:11:05,923 - INFO - Executing job 72 with question 'Percent of adults aged 18 years and older who have an overweight classification'
-2024-04-10 21:11:05,924 - INFO - Job 72 is done
-2024-04-10 21:11:05,926 - INFO - [GET] /api/get_results/72 received
-2024-04-10 21:11:05,929 - INFO - [POST] /api/state_mean received
-2024-04-10 21:11:05,929 - INFO - Job 73 has been registered into the queue
-2024-04-10 21:11:05,930 - INFO - Executing job 73 with question 'Percent of adults who report consuming vegetables less than one time daily'
-2024-04-10 21:11:05,930 - INFO - Job 73 is done
-2024-04-10 21:11:05,932 - INFO - [GET] /api/get_results/73 received
-2024-04-10 21:11:05,936 - INFO - [POST] /api/state_mean received
-2024-04-10 21:11:05,936 - INFO - Job 74 has been registered into the queue
-2024-04-10 21:11:05,936 - INFO - Executing job 74 with question 'Percent of adults who report consuming vegetables less than one time daily'
-2024-04-10 21:11:05,937 - INFO - Job 74 is done
-2024-04-10 21:11:05,938 - INFO - [GET] /api/get_results/74 received
-2024-04-10 21:11:05,942 - INFO - [POST] /api/state_mean received
-2024-04-10 21:11:05,942 - INFO - Job 75 has been registered into the queue
-2024-04-10 21:11:05,942 - INFO - Executing job 75 with question 'Percent of adults who achieve at least 150 minutes a week of moderate-intensity aerobic physical activity or 75 minutes a week of vigorous-intensity aerobic activity (or an equivalent combination)'
-2024-04-10 21:11:05,943 - INFO - Job 75 is done
-2024-04-10 21:11:05,945 - INFO - [GET] /api/get_results/75 received
-2024-04-10 21:11:05,947 - INFO - [POST] /api/state_mean received
-2024-04-10 21:11:05,948 - INFO - Job 76 has been registered into the queue
-2024-04-10 21:11:05,948 - INFO - Executing job 76 with question 'Percent of adults who achieve at least 150 minutes a week of moderate-intensity aerobic physical activity or 75 minutes a week of vigorous-intensity aerobic activity (or an equivalent combination)'
-2024-04-10 21:11:05,949 - INFO - Job 76 is done
-2024-04-10 21:11:05,951 - INFO - [GET] /api/get_results/76 received
-2024-04-10 21:11:05,956 - INFO - [POST] /api/state_mean_by_category received
-2024-04-10 21:11:05,956 - INFO - Job 77 has been registered into the queue
-2024-04-10 21:11:05,956 - INFO - Executing job 77 with question 'Percent of adults aged 18 years and older who have obesity'
-2024-04-10 21:11:05,957 - INFO - Job 77 is done
-2024-04-10 21:11:05,959 - INFO - [GET] /api/get_results/77 received
-2024-04-10 21:11:05,963 - INFO - [POST] /api/state_mean_by_category received
-2024-04-10 21:11:05,964 - INFO - Job 78 has been registered into the queue
-2024-04-10 21:11:05,964 - INFO - Executing job 78 with question 'Percent of adults aged 18 years and older who have an overweight classification'
-2024-04-10 21:11:05,965 - INFO - Job 78 is done
-2024-04-10 21:11:05,967 - INFO - [GET] /api/get_results/78 received
-2024-04-10 21:11:05,971 - INFO - [POST] /api/state_mean_by_category received
-2024-04-10 21:11:05,972 - INFO - Job 79 has been registered into the queue
-2024-04-10 21:11:05,972 - INFO - Executing job 79 with question 'Percent of adults who report consuming vegetables less than one time daily'
-2024-04-10 21:11:05,973 - INFO - Job 79 is done
-2024-04-10 21:11:05,975 - INFO - [GET] /api/get_results/79 received
-2024-04-10 21:11:05,979 - INFO - [POST] /api/state_mean_by_category received
-2024-04-10 21:11:05,979 - INFO - Job 80 has been registered into the queue
-2024-04-10 21:11:05,979 - INFO - Executing job 80 with question 'Percent of adults aged 18 years and older who have obesity'
-2024-04-10 21:11:05,980 - INFO - Job 80 is done
-2024-04-10 21:11:05,982 - INFO - [GET] /api/get_results/80 received
-2024-04-10 21:11:05,986 - INFO - [POST] /api/state_mean_by_category received
-2024-04-10 21:11:05,986 - INFO - Job 81 has been registered into the queue
-2024-04-10 21:11:05,987 - INFO - Executing job 81 with question 'Percent of adults who engage in muscle-strengthening activities on 2 or more days a week'
-2024-04-10 21:11:05,987 - INFO - Job 81 is done
-2024-04-10 21:11:05,989 - INFO - [GET] /api/get_results/81 received
-2024-04-10 21:11:05,993 - INFO - [POST] /api/state_mean_by_category received
-2024-04-10 21:11:05,994 - INFO - Job 82 has been registered into the queue
-2024-04-10 21:11:05,994 - INFO - Executing job 82 with question 'Percent of adults who report consuming vegetables less than one time daily'
-2024-04-10 21:11:05,995 - INFO - Job 82 is done
-2024-04-10 21:11:05,996 - INFO - [GET] /api/get_results/82 received
-2024-04-10 21:11:06,000 - INFO - [POST] /api/state_mean_by_category received
-2024-04-10 21:11:06,000 - INFO - Job 83 has been registered into the queue
-2024-04-10 21:11:06,001 - INFO - Executing job 83 with question 'Percent of adults aged 18 years and older who have obesity'
-2024-04-10 21:11:06,002 - INFO - Job 83 is done
-2024-04-10 21:11:06,003 - INFO - [GET] /api/get_results/83 received
-2024-04-10 21:11:06,008 - INFO - [POST] /api/state_mean_by_category received
-2024-04-10 21:11:06,008 - INFO - Job 84 has been registered into the queue
-2024-04-10 21:11:06,009 - INFO - Executing job 84 with question 'Percent of adults aged 18 years and older who have obesity'
-2024-04-10 21:11:06,009 - INFO - Job 84 is done
-2024-04-10 21:11:06,011 - INFO - [GET] /api/get_results/84 received
-2024-04-10 21:11:06,016 - INFO - [POST] /api/state_mean_by_category received
-2024-04-10 21:11:06,016 - INFO - Job 85 has been registered into the queue
-2024-04-10 21:11:06,017 - INFO - Executing job 85 with question 'Percent of adults who report consuming vegetables less than one time daily'
-2024-04-10 21:11:06,018 - INFO - Job 85 is done
-2024-04-10 21:11:06,019 - INFO - [GET] /api/get_results/85 received
-2024-04-10 21:11:06,023 - INFO - [POST] /api/state_mean_by_category received
-2024-04-10 21:11:06,023 - INFO - Job 86 has been registered into the queue
-2024-04-10 21:11:06,024 - INFO - Executing job 86 with question 'Percent of adults who achieve at least 150 minutes a week of moderate-intensity aerobic physical activity or 75 minutes a week of vigorous-intensity aerobic physical activity and engage in muscle-strengthening activities on 2 or more days a week'
-2024-04-10 21:11:06,024 - INFO - Job 86 is done
-2024-04-10 21:11:06,026 - INFO - [GET] /api/get_results/86 received
-2024-04-10 21:11:06,029 - INFO - [POST] /api/state_mean_by_category received
-2024-04-10 21:11:06,030 - INFO - Job 87 has been registered into the queue
-2024-04-10 21:11:06,030 - INFO - Executing job 87 with question 'Percent of adults who engage in muscle-strengthening activities on 2 or more days a week'
-2024-04-10 21:11:06,031 - INFO - Job 87 is done
-2024-04-10 21:11:06,032 - INFO - [GET] /api/get_results/87 received
-2024-04-10 21:11:06,036 - INFO - [POST] /api/state_mean_by_category received
-2024-04-10 21:11:06,036 - INFO - Job 88 has been registered into the queue
-2024-04-10 21:11:06,037 - INFO - Executing job 88 with question 'Percent of adults who achieve at least 150 minutes a week of moderate-intensity aerobic physical activity or 75 minutes a week of vigorous-intensity aerobic physical activity and engage in muscle-strengthening activities on 2 or more days a week'
-2024-04-10 21:11:06,038 - INFO - Job 88 is done
-2024-04-10 21:11:06,039 - INFO - [GET] /api/get_results/88 received
-2024-04-10 21:11:06,043 - INFO - [POST] /api/state_mean_by_category received
-2024-04-10 21:11:06,043 - INFO - Job 89 has been registered into the queue
-2024-04-10 21:11:06,043 - INFO - Executing job 89 with question 'Percent of adults who report consuming vegetables less than one time daily'
-2024-04-10 21:11:06,044 - INFO - Job 89 is done
-2024-04-10 21:11:06,046 - INFO - [GET] /api/get_results/89 received
-2024-04-10 21:11:06,050 - INFO - [POST] /api/state_mean_by_category received
-2024-04-10 21:11:06,050 - INFO - Job 90 has been registered into the queue
-2024-04-10 21:11:06,050 - INFO - Executing job 90 with question 'Percent of adults who engage in muscle-strengthening activities on 2 or more days a week'
-2024-04-10 21:11:06,051 - INFO - Job 90 is done
-2024-04-10 21:11:06,053 - INFO - [GET] /api/get_results/90 received
-2024-04-10 21:11:06,057 - INFO - [POST] /api/state_mean_by_category received
-2024-04-10 21:11:06,058 - INFO - Job 91 has been registered into the queue
-2024-04-10 21:11:06,058 - INFO - Executing job 91 with question 'Percent of adults aged 18 years and older who have an overweight classification'
-2024-04-10 21:11:06,059 - INFO - Job 91 is done
-2024-04-10 21:11:06,060 - INFO - [GET] /api/get_results/91 received
-2024-04-10 21:11:06,064 - INFO - [POST] /api/state_mean_by_category received
-2024-04-10 21:11:06,064 - INFO - Job 92 has been registered into the queue
-2024-04-10 21:11:06,065 - INFO - Executing job 92 with question 'Percent of adults who engage in muscle-strengthening activities on 2 or more days a week'
-2024-04-10 21:11:06,066 - INFO - Job 92 is done
-2024-04-10 21:11:06,068 - INFO - [GET] /api/get_results/92 received
-2024-04-10 21:11:06,072 - INFO - [POST] /api/state_mean_by_category received
-2024-04-10 21:11:06,072 - INFO - Job 93 has been registered into the queue
-2024-04-10 21:11:06,072 - INFO - Executing job 93 with question 'Percent of adults who achieve at least 150 minutes a week of moderate-intensity aerobic physical activity or 75 minutes a week of vigorous-intensity aerobic physical activity and engage in muscle-strengthening activities on 2 or more days a week'
-2024-04-10 21:11:06,073 - INFO - Job 93 is done
-2024-04-10 21:11:06,075 - INFO - [GET] /api/get_results/93 received
-2024-04-10 21:11:06,079 - INFO - [POST] /api/state_mean_by_category received
-2024-04-10 21:11:06,079 - INFO - Job 94 has been registered into the queue
-2024-04-10 21:11:06,080 - INFO - Executing job 94 with question 'Percent of adults who achieve at least 150 minutes a week of moderate-intensity aerobic physical activity or 75 minutes a week of vigorous-intensity aerobic physical activity and engage in muscle-strengthening activities on 2 or more days a week'
-2024-04-10 21:11:06,080 - INFO - Job 94 is done
-2024-04-10 21:11:06,083 - INFO - [GET] /api/get_results/94 received
-2024-04-10 21:11:06,087 - INFO - [POST] /api/state_mean_by_category received
-2024-04-10 21:11:06,087 - INFO - Job 95 has been registered into the queue
-2024-04-10 21:11:06,088 - INFO - Executing job 95 with question 'Percent of adults aged 18 years and older who have an overweight classification'
-2024-04-10 21:11:06,089 - INFO - Job 95 is done
-2024-04-10 21:11:06,090 - INFO - [GET] /api/get_results/95 received
-2024-04-10 21:11:06,094 - INFO - [POST] /api/state_mean_by_category received
-2024-04-10 21:11:06,094 - INFO - Job 96 has been registered into the queue
-2024-04-10 21:11:06,095 - INFO - Executing job 96 with question 'Percent of adults aged 18 years and older who have an overweight classification'
-2024-04-10 21:11:06,096 - INFO - Job 96 is done
-2024-04-10 21:11:06,098 - INFO - [GET] /api/get_results/96 received
-2024-04-10 21:11:06,103 - INFO - [POST] /api/states_mean received
-2024-04-10 21:11:06,104 - INFO - Job 97 has been registered into the queue
-2024-04-10 21:11:06,104 - INFO - Executing job 97 with question 'Percent of adults who engage in muscle-strengthening activities on 2 or more days a week'
-2024-04-10 21:11:06,107 - INFO - Job 97 is done
-2024-04-10 21:11:06,108 - INFO - [GET] /api/get_results/97 received
-2024-04-10 21:11:06,113 - INFO - [POST] /api/states_mean received
-2024-04-10 21:11:06,113 - INFO - Job 98 has been registered into the queue
-2024-04-10 21:11:06,114 - INFO - Executing job 98 with question 'Percent of adults aged 18 years and older who have obesity'
-2024-04-10 21:11:06,119 - INFO - Job 98 is done
-2024-04-10 21:11:06,121 - INFO - [GET] /api/get_results/98 received
-2024-04-10 21:11:06,125 - INFO - [POST] /api/states_mean received
-2024-04-10 21:11:06,125 - INFO - Job 99 has been registered into the queue
-2024-04-10 21:11:06,126 - INFO - Executing job 99 with question 'Percent of adults who achieve at least 300 minutes a week of moderate-intensity aerobic physical activity or 150 minutes a week of vigorous-intensity aerobic activity (or an equivalent combination)'
-2024-04-10 21:11:06,130 - INFO - Job 99 is done
-2024-04-10 21:11:06,131 - INFO - [GET] /api/get_results/99 received
-2024-04-10 21:11:06,136 - INFO - [POST] /api/states_mean received
-2024-04-10 21:11:06,137 - INFO - Job 100 has been registered into the queue
-2024-04-10 21:11:06,137 - INFO - Executing job 100 with question 'Percent of adults who report consuming fruit less than one time daily'
-2024-04-10 21:11:06,139 - INFO - Job 100 is done
-2024-04-10 21:11:06,140 - INFO - [GET] /api/get_results/100 received
-2024-04-10 21:11:06,145 - INFO - [POST] /api/states_mean received
-2024-04-10 21:11:06,146 - INFO - Job 101 has been registered into the queue
-2024-04-10 21:11:06,146 - INFO - Executing job 101 with question 'Percent of adults who engage in no leisure-time physical activity'
-2024-04-10 21:11:06,153 - INFO - Job 101 is done
-2024-04-10 21:11:06,155 - INFO - [GET] /api/get_results/101 received
-2024-04-10 21:11:06,161 - INFO - [POST] /api/states_mean received
-2024-04-10 21:11:06,161 - INFO - Job 102 has been registered into the queue
-2024-04-10 21:11:06,162 - INFO - Executing job 102 with question 'Percent of adults who achieve at least 150 minutes a week of moderate-intensity aerobic physical activity or 75 minutes a week of vigorous-intensity aerobic activity (or an equivalent combination)'
-2024-04-10 21:11:06,167 - INFO - [GET] /api/get_results/102 received
-2024-04-10 21:11:06,167 - INFO - Job 102 is still running
-2024-04-10 21:11:06,168 - INFO - Job 102 is done
-2024-04-10 21:11:06,376 - INFO - [GET] /api/get_results/102 received
-2024-04-10 21:11:06,397 - INFO - [POST] /api/states_mean received
-2024-04-10 21:11:06,399 - INFO - Job 103 has been registered into the queue
-2024-04-10 21:11:06,403 - INFO - Executing job 103 with question 'Percent of adults who report consuming vegetables less than one time daily'
-2024-04-10 21:11:06,414 - INFO - Job 103 is done
-2024-04-10 21:11:06,423 - INFO - [GET] /api/get_results/103 received
-2024-04-10 21:11:06,445 - INFO - [POST] /api/states_mean received
-2024-04-10 21:11:06,447 - INFO - Job 104 has been registered into the queue
-2024-04-10 21:11:06,448 - INFO - Executing job 104 with question 'Percent of adults who achieve at least 150 minutes a week of moderate-intensity aerobic physical activity or 75 minutes a week of vigorous-intensity aerobic physical activity and engage in muscle-strengthening activities on 2 or more days a week'
-2024-04-10 21:11:06,460 - INFO - Job 104 is done
-2024-04-10 21:11:06,463 - INFO - [GET] /api/get_results/104 received
-2024-04-10 21:11:06,474 - INFO - [POST] /api/states_mean received
-2024-04-10 21:11:06,474 - INFO - Job 105 has been registered into the queue
-2024-04-10 21:11:06,475 - INFO - Executing job 105 with question 'Percent of adults aged 18 years and older who have an overweight classification'
-2024-04-10 21:11:06,483 - INFO - [GET] /api/get_results/105 received
-2024-04-10 21:11:06,484 - INFO - Job 105 is still running
-2024-04-10 21:11:06,484 - INFO - Job 105 is done
-2024-04-10 21:11:06,693 - INFO - [GET] /api/get_results/105 received
-2024-04-10 21:11:06,720 - INFO - [POST] /api/worst5 received
-2024-04-10 21:11:06,721 - INFO - Job 106 has been registered into the queue
-2024-04-10 21:11:06,722 - INFO - Executing job 106 with question 'Percent of adults who engage in muscle-strengthening activities on 2 or more days a week'
-2024-04-10 21:11:06,730 - INFO - Job 106 is done
-2024-04-10 21:11:06,733 - INFO - [GET] /api/get_results/106 received
-2024-04-10 21:11:06,739 - INFO - [POST] /api/worst5 received
-2024-04-10 21:11:06,740 - INFO - Job 107 has been registered into the queue
-2024-04-10 21:11:06,740 - INFO - Executing job 107 with question 'Percent of adults aged 18 years and older who have obesity'
-2024-04-10 21:11:06,748 - INFO - Job 107 is done
-2024-04-10 21:11:06,751 - INFO - [GET] /api/get_results/107 received
-2024-04-10 21:11:06,755 - INFO - [POST] /api/worst5 received
-2024-04-10 21:11:06,756 - INFO - Job 108 has been registered into the queue
-2024-04-10 21:11:06,757 - INFO - Executing job 108 with question 'Percent of adults who achieve at least 300 minutes a week of moderate-intensity aerobic physical activity or 150 minutes a week of vigorous-intensity aerobic activity (or an equivalent combination)'
-2024-04-10 21:11:06,761 - INFO - Job 108 is done
-2024-04-10 21:11:06,763 - INFO - [GET] /api/get_results/108 received
-2024-04-10 21:11:06,767 - INFO - [POST] /api/worst5 received
-2024-04-10 21:11:06,767 - INFO - Job 109 has been registered into the queue
-2024-04-10 21:11:06,767 - INFO - Executing job 109 with question 'Percent of adults who report consuming fruit less than one time daily'
-2024-04-10 21:11:06,771 - INFO - [GET] /api/get_results/109 received
-2024-04-10 21:11:06,771 - INFO - Job 109 is done
-2024-04-10 21:11:06,774 - INFO - [POST] /api/worst5 received
-2024-04-10 21:11:06,774 - INFO - Job 110 has been registered into the queue
-2024-04-10 21:11:06,774 - INFO - Executing job 110 with question 'Percent of adults who engage in no leisure-time physical activity'
-2024-04-10 21:11:06,779 - INFO - Job 110 is done
-2024-04-10 21:11:06,781 - INFO - [GET] /api/get_results/110 received
-2024-04-10 21:11:06,784 - INFO - [POST] /api/worst5 received
-2024-04-10 21:11:06,784 - INFO - Job 111 has been registered into the queue
-2024-04-10 21:11:06,784 - INFO - Executing job 111 with question 'Percent of adults who achieve at least 150 minutes a week of moderate-intensity aerobic physical activity or 75 minutes a week of vigorous-intensity aerobic activity (or an equivalent combination)'
-2024-04-10 21:11:06,786 - INFO - Job 111 is done
-2024-04-10 21:11:06,788 - INFO - [GET] /api/get_results/111 received
-2024-04-10 21:11:06,791 - INFO - [POST] /api/worst5 received
-2024-04-10 21:11:06,791 - INFO - Job 112 has been registered into the queue
-2024-04-10 21:11:06,792 - INFO - Executing job 112 with question 'Percent of adults who report consuming vegetables less than one time daily'
-2024-04-10 21:11:06,795 - INFO - Job 112 is done
-2024-04-10 21:11:06,796 - INFO - [GET] /api/get_results/112 received
-2024-04-10 21:11:06,799 - INFO - [POST] /api/worst5 received
-2024-04-10 21:11:06,799 - INFO - Job 113 has been registered into the queue
-2024-04-10 21:11:06,800 - INFO - Executing job 113 with question 'Percent of adults who achieve at least 150 minutes a week of moderate-intensity aerobic physical activity or 75 minutes a week of vigorous-intensity aerobic physical activity and engage in muscle-strengthening activities on 2 or more days a week'
-2024-04-10 21:11:06,804 - INFO - Job 113 is done
-2024-04-10 21:11:06,804 - INFO - [GET] /api/get_results/113 received
-2024-04-10 21:11:06,807 - INFO - [POST] /api/worst5 received
-2024-04-10 21:11:06,807 - INFO - Job 114 has been registered into the queue
-2024-04-10 21:11:06,807 - INFO - Executing job 114 with question 'Percent of adults aged 18 years and older who have an overweight classification'
-2024-04-10 21:11:06,812 - INFO - Job 114 is done
-2024-04-10 21:11:06,813 - INFO - [GET] /api/get_results/114 received
-2024-04-10 21:12:07,097 - INFO - [GET] /api/graceful_shutdown received
-2024-04-10 21:12:07,097 - INFO - Gracefully shutting down ThreadPool...
-2024-04-10 21:12:24,257 - INFO - [POST] /api/best5 received
-2024-04-10 21:12:24,260 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,261 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,263 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,263 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,266 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,266 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,269 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,269 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,272 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,273 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,276 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,277 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,279 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,279 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,282 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,283 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,285 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,285 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,288 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,288 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,291 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,292 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,295 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,295 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,297 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,298 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,301 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,301 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,304 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,304 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,307 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,307 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,310 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,311 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,316 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,317 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,319 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,320 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,323 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,323 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,325 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,326 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,328 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,329 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,332 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,332 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,335 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,335 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,338 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,338 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,341 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,341 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,344 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,344 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,346 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,346 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,349 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,350 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,353 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,353 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,356 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,356 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,359 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,359 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,362 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,362 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,365 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,365 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,367 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,368 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,371 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,371 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,374 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,374 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,377 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,378 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,381 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,381 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,384 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,384 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,388 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,388 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,392 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,393 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,395 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,396 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,398 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,399 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,401 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,401 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,403 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,404 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,406 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,406 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,409 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,410 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,414 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,414 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,418 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,418 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,422 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,422 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,425 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,426 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,429 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,429 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,432 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,432 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,436 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,436 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,439 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,439 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,442 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,443 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,445 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,446 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,449 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,449 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,452 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,452 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,455 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,455 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,458 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,458 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,461 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,461 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,464 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,464 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,466 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,466 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,469 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,470 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,472 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,473 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,476 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,477 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,480 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,480 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,483 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,483 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,486 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,486 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,489 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,489 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,491 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,491 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,493 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,493 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,496 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,496 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,498 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,499 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,501 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,501 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,503 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,504 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,506 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,506 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,509 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,509 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,512 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,512 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,515 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,515 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,518 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,519 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,521 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,522 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,525 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,525 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,528 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,528 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,531 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,532 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,535 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,536 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,540 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,540 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,544 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,544 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,550 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,551 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,555 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,555 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,558 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,559 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,562 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,562 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,565 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,565 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,568 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,568 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,571 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,571 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,574 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,574 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,577 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,577 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,580 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,580 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,583 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,583 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,586 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,586 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,599 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,600 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,602 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,603 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,605 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,605 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,608 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,608 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,610 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,610 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,613 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,613 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,616 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,616 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,618 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,618 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,620 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,620 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,623 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,624 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,626 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,626 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,629 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,629 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,632 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,632 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,635 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,636 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,638 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,638 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,641 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,641 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,643 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,644 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,646 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,646 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,648 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,649 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,651 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,651 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,653 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,653 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,656 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,656 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,658 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,659 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,661 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,661 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,664 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,664 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,666 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,667 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,669 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,669 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,671 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,671 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,674 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,674 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,677 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,677 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,680 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,680 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,683 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,683 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,686 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,686 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,688 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,688 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,691 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,691 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,693 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,693 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,696 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,696 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,699 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,699 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,702 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,702 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,705 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,705 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,707 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,707 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,710 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,710 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,712 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,712 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,714 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,715 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,717 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,717 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,719 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,720 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,722 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,722 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,725 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,726 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,728 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,728 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,731 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,732 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,735 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,735 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,737 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,737 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,740 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,740 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,742 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,742 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,745 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,745 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,748 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,748 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,750 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,750 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,753 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,753 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,755 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,756 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,758 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,759 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,761 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,761 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,764 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,764 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,767 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,767 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,769 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,769 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,771 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,771 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,773 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,773 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,776 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,776 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,779 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,780 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,782 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,782 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,784 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,785 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,787 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,787 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,789 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,790 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,792 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,793 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,795 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,795 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,798 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,798 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,800 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,800 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,803 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,803 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,805 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,805 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,808 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,808 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,810 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,810 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,813 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,813 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,815 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,815 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,818 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,818 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,820 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,821 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,824 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,824 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,826 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,827 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,829 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,829 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,832 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,832 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,835 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,836 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,838 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,838 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,841 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,841 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,845 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,845 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,849 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,849 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,852 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,852 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,856 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,857 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,861 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,862 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,866 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,866 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,869 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,869 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,872 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,873 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,875 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,875 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,878 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,879 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,882 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,882 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,886 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,886 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,890 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,890 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,893 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,893 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,896 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,897 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,899 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,900 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,903 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,903 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,906 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,906 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,909 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,909 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,912 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,913 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,916 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,916 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,920 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,920 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,923 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,923 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,927 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,927 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,930 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,930 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,933 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,933 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,936 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,936 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,938 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,939 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,942 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,942 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,944 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,945 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,947 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,948 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,950 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,950 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,953 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,953 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,957 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,957 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,959 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,959 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,963 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,963 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,965 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,965 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,968 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,968 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,971 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,971 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,975 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,975 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,978 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,978 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,980 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,981 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,983 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,984 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,986 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,986 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,989 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,989 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,991 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,992 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,994 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,994 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,997 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,997 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:24,999 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:24,999 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:25,002 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:25,002 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:25,004 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:25,004 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:25,007 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:25,007 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:25,010 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:25,010 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:25,012 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:25,012 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:25,015 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:25,015 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:25,017 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:25,017 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:25,019 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:25,020 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:25,022 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:25,022 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:25,025 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:25,025 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:25,027 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:25,027 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:25,029 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:25,030 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:25,033 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:25,033 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:25,035 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:25,035 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:25,037 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:25,038 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:25,040 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:25,040 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:25,043 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:25,043 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:25,046 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:25,046 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:25,048 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:25,048 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:25,051 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:25,051 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:25,054 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:25,054 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:25,056 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:25,056 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:25,059 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:25,059 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:25,062 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:25,062 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:25,064 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:25,065 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:25,067 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:25,067 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:25,069 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:25,070 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:25,073 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:25,073 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:25,075 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:25,076 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:25,078 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:25,078 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:25,081 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:25,081 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:25,084 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:25,084 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:25,086 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:25,087 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:25,089 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:25,089 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:25,091 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:25,091 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:25,094 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:25,094 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:25,096 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:25,096 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:25,099 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:25,099 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:25,102 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:25,102 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:25,105 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:25,105 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:25,107 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:25,108 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:25,110 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:25,110 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:25,112 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:25,113 - INFO - Flask server has been shutdown. No more jobs will be processed
-2024-04-10 21:12:25,115 - INFO - [GET] /api/get_results/115 received
-2024-04-10 21:12:25,115 - INFO - Flask server has been shutdown. No more jobs will be processed
+2024-04-10 21:59:44,128 - INFO - [POST] /api/best5 received
+2024-04-10 21:59:44,128 - INFO - Job 1 has been registered into the queue
+2024-04-10 21:59:44,129 - INFO - Executing job 1 with question 'Percent of adults who engage in muscle-strengthening activities on 2 or more days a week'
+2024-04-10 21:59:44,132 - INFO - Job 1 is done
+2024-04-10 21:59:44,133 - INFO - [GET] /api/get_results/1 received
+2024-04-10 21:59:44,136 - INFO - [POST] /api/best5 received
+2024-04-10 21:59:44,136 - INFO - Job 2 has been registered into the queue
+2024-04-10 21:59:44,137 - INFO - Executing job 2 with question 'Percent of adults aged 18 years and older who have obesity'
+2024-04-10 21:59:44,140 - INFO - Job 2 is done
+2024-04-10 21:59:44,142 - INFO - [GET] /api/get_results/2 received
+2024-04-10 21:59:44,144 - INFO - [POST] /api/best5 received
+2024-04-10 21:59:44,144 - INFO - Job 3 has been registered into the queue
+2024-04-10 21:59:44,145 - INFO - Executing job 3 with question 'Percent of adults who achieve at least 300 minutes a week of moderate-intensity aerobic physical activity or 150 minutes a week of vigorous-intensity aerobic activity (or an equivalent combination)'
+2024-04-10 21:59:44,148 - INFO - Job 3 is done
+2024-04-10 21:59:44,150 - INFO - [GET] /api/get_results/3 received
+2024-04-10 21:59:44,153 - INFO - [POST] /api/best5 received
+2024-04-10 21:59:44,153 - INFO - Job 4 has been registered into the queue
+2024-04-10 21:59:44,153 - INFO - Executing job 4 with question 'Percent of adults who report consuming fruit less than one time daily'
+2024-04-10 21:59:44,156 - INFO - Job 4 is done
+2024-04-10 21:59:44,156 - INFO - [GET] /api/get_results/4 received
+2024-04-10 21:59:44,160 - INFO - [POST] /api/best5 received
+2024-04-10 21:59:44,160 - INFO - Job 5 has been registered into the queue
+2024-04-10 21:59:44,160 - INFO - Executing job 5 with question 'Percent of adults who engage in no leisure-time physical activity'
+2024-04-10 21:59:44,163 - INFO - Job 5 is done
+2024-04-10 21:59:44,165 - INFO - [GET] /api/get_results/5 received
+2024-04-10 21:59:44,168 - INFO - [POST] /api/best5 received
+2024-04-10 21:59:44,168 - INFO - Job 6 has been registered into the queue
+2024-04-10 21:59:44,169 - INFO - Executing job 6 with question 'Percent of adults who achieve at least 150 minutes a week of moderate-intensity aerobic physical activity or 75 minutes a week of vigorous-intensity aerobic activity (or an equivalent combination)'
+2024-04-10 21:59:44,171 - INFO - Job 6 is done
+2024-04-10 21:59:44,172 - INFO - [GET] /api/get_results/6 received
+2024-04-10 21:59:44,175 - INFO - [POST] /api/best5 received
+2024-04-10 21:59:44,175 - INFO - Job 7 has been registered into the queue
+2024-04-10 21:59:44,176 - INFO - Executing job 7 with question 'Percent of adults who report consuming vegetables less than one time daily'
+2024-04-10 21:59:44,177 - INFO - Job 7 is done
+2024-04-10 21:59:44,179 - INFO - [GET] /api/get_results/7 received
+2024-04-10 21:59:44,182 - INFO - [POST] /api/best5 received
+2024-04-10 21:59:44,182 - INFO - Job 8 has been registered into the queue
+2024-04-10 21:59:44,182 - INFO - Executing job 8 with question 'Percent of adults who achieve at least 150 minutes a week of moderate-intensity aerobic physical activity or 75 minutes a week of vigorous-intensity aerobic physical activity and engage in muscle-strengthening activities on 2 or more days a week'
+2024-04-10 21:59:44,184 - INFO - Job 8 is done
+2024-04-10 21:59:44,186 - INFO - [GET] /api/get_results/8 received
+2024-04-10 21:59:44,189 - INFO - [POST] /api/best5 received
+2024-04-10 21:59:44,190 - INFO - Job 9 has been registered into the queue
+2024-04-10 21:59:44,190 - INFO - Executing job 9 with question 'Percent of adults aged 18 years and older who have an overweight classification'
+2024-04-10 21:59:44,196 - INFO - Job 9 is done
+2024-04-10 21:59:44,197 - INFO - [GET] /api/get_results/9 received
+2024-04-10 21:59:47,060 - INFO - [POST] /api/diff_from_mean received
+2024-04-10 21:59:47,060 - INFO - Job 10 has been registered into the queue
+2024-04-10 21:59:47,060 - INFO - Executing job 10 with question 'Percent of adults who engage in muscle-strengthening activities on 2 or more days a week'
+2024-04-10 21:59:47,062 - INFO - [GET] /api/get_results/10 received
+2024-04-10 21:59:47,063 - INFO - Job 10 is still running
+2024-04-10 21:59:47,269 - INFO - [GET] /api/get_results/10 received
+2024-04-10 21:59:47,269 - INFO - Job 10 is still running
+2024-04-10 21:59:47,478 - INFO - [GET] /api/get_results/10 received
+2024-04-10 21:59:47,478 - INFO - Job 10 is still running
+2024-04-10 21:59:47,687 - INFO - [GET] /api/get_results/10 received
+2024-04-10 21:59:47,688 - INFO - Job 10 is still running
+2024-04-10 21:59:47,897 - INFO - [GET] /api/get_results/10 received
+2024-04-10 21:59:47,897 - INFO - Job 10 is still running
+2024-04-10 21:59:48,106 - INFO - [GET] /api/get_results/10 received
+2024-04-10 21:59:48,106 - INFO - Job 10 is still running
+2024-04-10 21:59:48,317 - INFO - [GET] /api/get_results/10 received
+2024-04-10 21:59:48,318 - INFO - Job 10 is still running
+2024-04-10 21:59:48,527 - INFO - [GET] /api/get_results/10 received
+2024-04-10 21:59:48,528 - INFO - Job 10 is still running
+2024-04-10 21:59:48,737 - INFO - [GET] /api/get_results/10 received
+2024-04-10 21:59:48,737 - INFO - Job 10 is still running
+2024-04-10 21:59:48,946 - INFO - [GET] /api/get_results/10 received
+2024-04-10 21:59:48,947 - INFO - Job 10 is still running
+2024-04-10 21:59:49,156 - INFO - [GET] /api/get_results/10 received
+2024-04-10 21:59:49,157 - INFO - Job 10 is still running
+2024-04-10 21:59:49,168 - INFO - [POST] /api/diff_from_mean received
+2024-04-10 21:59:49,169 - INFO - Job 11 has been registered into the queue
+2024-04-10 21:59:49,170 - INFO - Executing job 11 with question 'Percent of adults aged 18 years and older who have obesity'
+2024-04-10 21:59:49,178 - INFO - [GET] /api/get_results/11 received
+2024-04-10 21:59:49,178 - INFO - Job 11 is still running
+2024-04-10 21:59:49,388 - INFO - [GET] /api/get_results/11 received
+2024-04-10 21:59:49,388 - INFO - Job 11 is still running
+2024-04-10 21:59:49,594 - INFO - [GET] /api/get_results/11 received
+2024-04-10 21:59:49,594 - INFO - Job 11 is still running
+2024-04-10 21:59:49,801 - INFO - [GET] /api/get_results/11 received
+2024-04-10 21:59:49,802 - INFO - Job 11 is still running
+2024-04-10 21:59:50,010 - INFO - [GET] /api/get_results/11 received
+2024-04-10 21:59:50,011 - INFO - Job 11 is still running
+2024-04-10 21:59:50,220 - INFO - [GET] /api/get_results/11 received
+2024-04-10 21:59:50,220 - INFO - Job 11 is still running
+2024-04-10 21:59:50,429 - INFO - [GET] /api/get_results/11 received
+2024-04-10 21:59:50,430 - INFO - Job 11 is still running
+2024-04-10 21:59:50,638 - INFO - [GET] /api/get_results/11 received
+2024-04-10 21:59:50,639 - INFO - Job 11 is still running
+2024-04-10 21:59:50,845 - INFO - [GET] /api/get_results/11 received
+2024-04-10 21:59:50,845 - INFO - Job 11 is still running
+2024-04-10 21:59:51,052 - INFO - [GET] /api/get_results/11 received
+2024-04-10 21:59:51,052 - INFO - Job 11 is still running
+2024-04-10 21:59:51,261 - INFO - [GET] /api/get_results/11 received
+2024-04-10 21:59:51,261 - INFO - Job 11 is still running
+2024-04-10 21:59:51,272 - INFO - [POST] /api/diff_from_mean received
+2024-04-10 21:59:51,273 - INFO - Job 12 has been registered into the queue
+2024-04-10 21:59:51,274 - INFO - Executing job 12 with question 'Percent of adults who achieve at least 300 minutes a week of moderate-intensity aerobic physical activity or 150 minutes a week of vigorous-intensity aerobic activity (or an equivalent combination)'
+2024-04-10 21:59:51,284 - INFO - [GET] /api/get_results/12 received
+2024-04-10 21:59:51,284 - INFO - Job 12 is still running
+2024-04-10 21:59:51,493 - INFO - [GET] /api/get_results/12 received
+2024-04-10 21:59:51,494 - INFO - Job 12 is still running
+2024-04-10 21:59:51,703 - INFO - [GET] /api/get_results/12 received
+2024-04-10 21:59:51,704 - INFO - Job 12 is still running
+2024-04-10 21:59:51,912 - INFO - [GET] /api/get_results/12 received
+2024-04-10 21:59:51,913 - INFO - Job 12 is still running
+2024-04-10 21:59:52,122 - INFO - [GET] /api/get_results/12 received
+2024-04-10 21:59:52,122 - INFO - Job 12 is still running
+2024-04-10 21:59:52,334 - INFO - [GET] /api/get_results/12 received
+2024-04-10 21:59:52,334 - INFO - Job 12 is still running
+2024-04-10 21:59:52,543 - INFO - [GET] /api/get_results/12 received
+2024-04-10 21:59:52,544 - INFO - Job 12 is still running
+2024-04-10 21:59:52,753 - INFO - [GET] /api/get_results/12 received
+2024-04-10 21:59:52,753 - INFO - Job 12 is still running
+2024-04-10 21:59:52,962 - INFO - [GET] /api/get_results/12 received
+2024-04-10 21:59:52,962 - INFO - Job 12 is still running
+2024-04-10 21:59:53,171 - INFO - [GET] /api/get_results/12 received
+2024-04-10 21:59:53,171 - INFO - Job 12 is still running
+2024-04-10 21:59:53,380 - INFO - [GET] /api/get_results/12 received
+2024-04-10 21:59:53,381 - INFO - Job 12 is still running
+2024-04-10 21:59:53,391 - INFO - [POST] /api/diff_from_mean received
+2024-04-10 21:59:53,391 - INFO - Job 13 has been registered into the queue
+2024-04-10 21:59:53,393 - INFO - Executing job 13 with question 'Percent of adults who report consuming fruit less than one time daily'
+2024-04-10 21:59:53,401 - INFO - [GET] /api/get_results/13 received
+2024-04-10 21:59:53,402 - INFO - Job 13 is still running
+2024-04-10 21:59:53,611 - INFO - [GET] /api/get_results/13 received
+2024-04-10 21:59:53,612 - INFO - Job 13 is still running
+2024-04-10 21:59:53,821 - INFO - [GET] /api/get_results/13 received
+2024-04-10 21:59:53,821 - INFO - Job 13 is still running
+2024-04-10 21:59:54,030 - INFO - [GET] /api/get_results/13 received
+2024-04-10 21:59:54,030 - INFO - Job 13 is still running
+2024-04-10 21:59:54,239 - INFO - [GET] /api/get_results/13 received
+2024-04-10 21:59:54,240 - INFO - Job 13 is still running
+2024-04-10 21:59:54,446 - INFO - [GET] /api/get_results/13 received
+2024-04-10 21:59:54,446 - INFO - Job 13 is still running
+2024-04-10 21:59:54,652 - INFO - [GET] /api/get_results/13 received
+2024-04-10 21:59:54,652 - INFO - Job 13 is still running
+2024-04-10 21:59:54,861 - INFO - [GET] /api/get_results/13 received
+2024-04-10 21:59:54,862 - INFO - Job 13 is still running
+2024-04-10 21:59:55,073 - INFO - [GET] /api/get_results/13 received
+2024-04-10 21:59:55,074 - INFO - Job 13 is still running
+2024-04-10 21:59:55,280 - INFO - [GET] /api/get_results/13 received
+2024-04-10 21:59:55,280 - INFO - Job 13 is still running
+2024-04-10 21:59:55,484 - INFO - [GET] /api/get_results/13 received
+2024-04-10 21:59:55,484 - INFO - Job 13 is still running
+2024-04-10 21:59:55,487 - INFO - [POST] /api/diff_from_mean received
+2024-04-10 21:59:55,488 - INFO - Job 14 has been registered into the queue
+2024-04-10 21:59:55,488 - INFO - Executing job 14 with question 'Percent of adults who engage in no leisure-time physical activity'
+2024-04-10 21:59:55,492 - INFO - [GET] /api/get_results/14 received
+2024-04-10 21:59:55,492 - INFO - Job 14 is still running
+2024-04-10 21:59:55,700 - INFO - [GET] /api/get_results/14 received
+2024-04-10 21:59:55,701 - INFO - Job 14 is still running
+2024-04-10 21:59:55,911 - INFO - [GET] /api/get_results/14 received
+2024-04-10 21:59:55,912 - INFO - Job 14 is still running
+2024-04-10 21:59:56,118 - INFO - [GET] /api/get_results/14 received
+2024-04-10 21:59:56,118 - INFO - Job 14 is still running
+2024-04-10 21:59:56,324 - INFO - [GET] /api/get_results/14 received
+2024-04-10 21:59:56,324 - INFO - Job 14 is still running
+2024-04-10 21:59:56,533 - INFO - [GET] /api/get_results/14 received
+2024-04-10 21:59:56,534 - INFO - Job 14 is still running
+2024-04-10 21:59:56,741 - INFO - [GET] /api/get_results/14 received
+2024-04-10 21:59:56,742 - INFO - Job 14 is still running
+2024-04-10 21:59:56,950 - INFO - [GET] /api/get_results/14 received
+2024-04-10 21:59:56,951 - INFO - Job 14 is still running
+2024-04-10 21:59:57,159 - INFO - [GET] /api/get_results/14 received
+2024-04-10 21:59:57,160 - INFO - Job 14 is still running
+2024-04-10 21:59:57,369 - INFO - [GET] /api/get_results/14 received
+2024-04-10 21:59:57,369 - INFO - Job 14 is still running
+2024-04-10 22:01:26,679 - INFO - Initializing data ingestor
+2024-04-10 22:01:26,841 - INFO - ThreadPool has been initialized with 4 threads
+2024-04-10 22:01:26,842 - INFO - Starting to get requests...
+
+2024-04-10 22:01:30,707 - INFO - [POST] /api/best5 received
+2024-04-10 22:01:30,708 - INFO - Job 1 has been registered into the queue
+2024-04-10 22:01:30,708 - INFO - Executing job 1 with question 'Percent of adults who engage in muscle-strengthening activities on 2 or more days a week'
+2024-04-10 22:01:30,711 - INFO - [GET] /api/get_results/1 received
+2024-04-10 22:01:30,711 - INFO - Job 1 is still running
+2024-04-10 22:01:30,712 - INFO - Job 1 is done
+2024-04-10 22:01:30,918 - INFO - [GET] /api/get_results/1 received
+2024-04-10 22:01:30,928 - INFO - [POST] /api/best5 received
+2024-04-10 22:01:30,929 - INFO - Job 2 has been registered into the queue
+2024-04-10 22:01:30,931 - INFO - Executing job 2 with question 'Percent of adults aged 18 years and older who have obesity'
+2024-04-10 22:01:30,949 - INFO - [GET] /api/get_results/2 received
+2024-04-10 22:01:30,950 - INFO - Job 2 is still running
+2024-04-10 22:01:30,951 - INFO - Job 2 is done
+2024-04-10 22:01:31,158 - INFO - [GET] /api/get_results/2 received
+2024-04-10 22:01:31,169 - INFO - [POST] /api/best5 received
+2024-04-10 22:01:31,170 - INFO - Job 3 has been registered into the queue
+2024-04-10 22:01:31,171 - INFO - Executing job 3 with question 'Percent of adults who achieve at least 300 minutes a week of moderate-intensity aerobic physical activity or 150 minutes a week of vigorous-intensity aerobic activity (or an equivalent combination)'
+2024-04-10 22:01:31,186 - INFO - [GET] /api/get_results/3 received
+2024-04-10 22:01:31,187 - INFO - Job 3 is done
+2024-04-10 22:01:31,195 - INFO - [POST] /api/best5 received
+2024-04-10 22:01:31,195 - INFO - Job 4 has been registered into the queue
+2024-04-10 22:01:31,196 - INFO - Executing job 4 with question 'Percent of adults who report consuming fruit less than one time daily'
+2024-04-10 22:01:31,201 - INFO - Job 4 is done
+2024-04-10 22:01:31,205 - INFO - [GET] /api/get_results/4 received
+2024-04-10 22:01:31,210 - INFO - [POST] /api/best5 received
+2024-04-10 22:01:31,211 - INFO - Job 5 has been registered into the queue
+2024-04-10 22:01:31,212 - INFO - Executing job 5 with question 'Percent of adults who engage in no leisure-time physical activity'
+2024-04-10 22:01:31,219 - INFO - Job 5 is done
+2024-04-10 22:01:31,222 - INFO - [GET] /api/get_results/5 received
+2024-04-10 22:01:31,226 - INFO - [POST] /api/best5 received
+2024-04-10 22:01:31,226 - INFO - Job 6 has been registered into the queue
+2024-04-10 22:01:31,227 - INFO - Executing job 6 with question 'Percent of adults who achieve at least 150 minutes a week of moderate-intensity aerobic physical activity or 75 minutes a week of vigorous-intensity aerobic activity (or an equivalent combination)'
+2024-04-10 22:01:31,230 - INFO - Job 6 is done
+2024-04-10 22:01:31,232 - INFO - [GET] /api/get_results/6 received
+2024-04-10 22:01:31,236 - INFO - [POST] /api/best5 received
+2024-04-10 22:01:31,236 - INFO - Job 7 has been registered into the queue
+2024-04-10 22:01:31,236 - INFO - Executing job 7 with question 'Percent of adults who report consuming vegetables less than one time daily'
+2024-04-10 22:01:31,239 - INFO - Job 7 is done
+2024-04-10 22:01:31,240 - INFO - [GET] /api/get_results/7 received
+2024-04-10 22:01:31,244 - INFO - [POST] /api/best5 received
+2024-04-10 22:01:31,244 - INFO - Job 8 has been registered into the queue
+2024-04-10 22:01:31,244 - INFO - Executing job 8 with question 'Percent of adults who achieve at least 150 minutes a week of moderate-intensity aerobic physical activity or 75 minutes a week of vigorous-intensity aerobic physical activity and engage in muscle-strengthening activities on 2 or more days a week'
+2024-04-10 22:01:31,249 - INFO - Job 8 is done
+2024-04-10 22:01:31,250 - INFO - [GET] /api/get_results/8 received
+2024-04-10 22:01:31,253 - INFO - [POST] /api/best5 received
+2024-04-10 22:01:31,254 - INFO - Job 9 has been registered into the queue
+2024-04-10 22:01:31,254 - INFO - Executing job 9 with question 'Percent of adults aged 18 years and older who have an overweight classification'
+2024-04-10 22:01:31,257 - INFO - Job 9 is done
+2024-04-10 22:01:31,259 - INFO - [GET] /api/get_results/9 received
+2024-04-10 22:01:34,103 - INFO - [POST] /api/diff_from_mean received
+2024-04-10 22:01:34,104 - INFO - Job 10 has been registered into the queue
+2024-04-10 22:01:34,104 - INFO - Executing job 10 with question 'Percent of adults who engage in muscle-strengthening activities on 2 or more days a week'
+2024-04-10 22:01:34,106 - INFO - [GET] /api/get_results/10 received
+2024-04-10 22:01:34,106 - INFO - Job 10 is still running
+2024-04-10 22:01:34,312 - INFO - [GET] /api/get_results/10 received
+2024-04-10 22:01:34,313 - INFO - Job 10 is still running
+2024-04-10 22:01:34,521 - INFO - [GET] /api/get_results/10 received
+2024-04-10 22:01:34,522 - INFO - Job 10 is still running
+2024-04-10 22:01:34,731 - INFO - [GET] /api/get_results/10 received
+2024-04-10 22:01:34,731 - INFO - Job 10 is still running
+2024-04-10 22:01:34,940 - INFO - [GET] /api/get_results/10 received
+2024-04-10 22:01:34,940 - INFO - Job 10 is still running
+2024-04-10 22:01:35,149 - INFO - [GET] /api/get_results/10 received
+2024-04-10 22:01:35,149 - INFO - Job 10 is still running
+2024-04-10 22:01:35,358 - INFO - [GET] /api/get_results/10 received
+2024-04-10 22:01:35,358 - INFO - Job 10 is still running
+2024-04-10 22:01:35,567 - INFO - [GET] /api/get_results/10 received
+2024-04-10 22:01:35,568 - INFO - Job 10 is still running
+2024-04-10 22:01:35,777 - INFO - [GET] /api/get_results/10 received
+2024-04-10 22:01:35,777 - INFO - Job 10 is still running
+2024-04-10 22:01:35,986 - INFO - [GET] /api/get_results/10 received
+2024-04-10 22:01:35,986 - INFO - Job 10 is still running
+2024-04-10 22:01:36,195 - INFO - [GET] /api/get_results/10 received
+2024-04-10 22:01:36,196 - INFO - Job 10 is still running
+2024-04-10 22:01:36,205 - INFO - [POST] /api/diff_from_mean received
+2024-04-10 22:01:36,206 - INFO - Job 11 has been registered into the queue
+2024-04-10 22:01:36,208 - INFO - Executing job 11 with question 'Percent of adults aged 18 years and older who have obesity'
+2024-04-10 22:01:36,218 - INFO - [GET] /api/get_results/11 received
+2024-04-10 22:01:36,219 - INFO - Job 11 is still running
+2024-04-10 22:01:36,428 - INFO - [GET] /api/get_results/11 received
+2024-04-10 22:01:36,428 - INFO - Job 11 is still running
+2024-04-10 22:01:36,637 - INFO - [GET] /api/get_results/11 received
+2024-04-10 22:01:36,637 - INFO - Job 11 is still running
+2024-04-10 22:01:36,846 - INFO - [GET] /api/get_results/11 received
+2024-04-10 22:01:36,847 - INFO - Job 11 is still running
+2024-04-10 22:01:37,055 - INFO - [GET] /api/get_results/11 received
+2024-04-10 22:01:37,056 - INFO - Job 11 is still running
+2024-04-10 22:01:37,265 - INFO - [GET] /api/get_results/11 received
+2024-04-10 22:01:37,265 - INFO - Job 11 is still running
+2024-04-10 22:01:37,474 - INFO - [GET] /api/get_results/11 received
+2024-04-10 22:01:37,475 - INFO - Job 11 is still running
+2024-04-10 22:01:37,683 - INFO - [GET] /api/get_results/11 received
+2024-04-10 22:01:37,684 - INFO - Job 11 is still running
+2024-04-10 22:01:37,892 - INFO - [GET] /api/get_results/11 received
+2024-04-10 22:01:37,893 - INFO - Job 11 is still running
+2024-04-10 22:01:38,111 - INFO - [GET] /api/get_results/11 received
+2024-04-10 22:01:38,111 - INFO - Job 11 is still running
+2024-04-10 22:01:38,322 - INFO - [GET] /api/get_results/11 received
+2024-04-10 22:01:38,322 - INFO - Job 11 is still running
+2024-04-10 22:01:38,330 - INFO - [POST] /api/diff_from_mean received
+2024-04-10 22:01:38,331 - INFO - Job 12 has been registered into the queue
+2024-04-10 22:01:38,332 - INFO - Executing job 12 with question 'Percent of adults who achieve at least 300 minutes a week of moderate-intensity aerobic physical activity or 150 minutes a week of vigorous-intensity aerobic activity (or an equivalent combination)'
+2024-04-10 22:01:38,338 - INFO - [GET] /api/get_results/12 received
+2024-04-10 22:01:38,339 - INFO - Job 12 is still running
+2024-04-10 22:01:38,548 - INFO - [GET] /api/get_results/12 received
+2024-04-10 22:01:38,549 - INFO - Job 12 is still running
+2024-04-10 22:01:38,758 - INFO - [GET] /api/get_results/12 received
+2024-04-10 22:01:38,758 - INFO - Job 12 is still running
+2024-04-10 22:01:38,963 - INFO - [GET] /api/get_results/12 received
+2024-04-10 22:01:38,963 - INFO - Job 12 is still running
+2024-04-10 22:01:39,169 - INFO - [GET] /api/get_results/12 received
+2024-04-10 22:01:39,170 - INFO - Job 12 is still running
+2024-04-10 22:01:39,379 - INFO - [GET] /api/get_results/12 received
+2024-04-10 22:01:39,380 - INFO - Job 12 is still running
+2024-04-10 22:01:39,589 - INFO - [GET] /api/get_results/12 received
+2024-04-10 22:01:39,589 - INFO - Job 12 is still running
+2024-04-10 22:01:39,799 - INFO - [GET] /api/get_results/12 received
+2024-04-10 22:01:39,799 - INFO - Job 12 is still running
+2024-04-10 22:01:40,008 - INFO - [GET] /api/get_results/12 received
+2024-04-10 22:01:40,009 - INFO - Job 12 is still running
+2024-04-10 22:01:40,216 - INFO - [GET] /api/get_results/12 received
+2024-04-10 22:01:40,216 - INFO - Job 12 is still running
+2024-04-10 22:01:40,424 - INFO - [GET] /api/get_results/12 received
+2024-04-10 22:01:40,424 - INFO - Job 12 is still running
+2024-04-10 22:01:40,433 - INFO - [POST] /api/diff_from_mean received
+2024-04-10 22:01:40,434 - INFO - Job 13 has been registered into the queue
+2024-04-10 22:01:40,436 - INFO - Executing job 13 with question 'Percent of adults who report consuming fruit less than one time daily'
+2024-04-10 22:01:40,444 - INFO - [GET] /api/get_results/13 received
+2024-04-10 22:01:40,444 - INFO - Job 13 is still running
+2024-04-10 22:01:40,654 - INFO - [GET] /api/get_results/13 received
+2024-04-10 22:01:40,656 - INFO - Job 13 is still running
+2024-04-10 22:04:30,302 - INFO - Initializing data ingestor
+2024-04-10 22:04:30,466 - INFO - ThreadPool has been initialized with 4 threads
+2024-04-10 22:04:30,466 - INFO - Starting to get requests...
+
+2024-04-10 22:04:33,410 - INFO - [POST] /api/best5 received
+2024-04-10 22:04:33,411 - INFO - Job 1 has been registered into the queue
+2024-04-10 22:04:33,411 - INFO - Executing job 1 with question 'Percent of adults who engage in muscle-strengthening activities on 2 or more days a week'
+2024-04-10 22:04:33,414 - INFO - Job 1 is done
+2024-04-10 22:04:33,415 - INFO - [GET] /api/get_results/1 received
+2024-04-10 22:04:33,418 - INFO - [POST] /api/best5 received
+2024-04-10 22:04:33,418 - INFO - Job 2 has been registered into the queue
+2024-04-10 22:04:33,419 - INFO - Executing job 2 with question 'Percent of adults aged 18 years and older who have obesity'
+2024-04-10 22:04:33,422 - INFO - Job 2 is done
+2024-04-10 22:04:33,424 - INFO - [GET] /api/get_results/2 received
+2024-04-10 22:04:33,426 - INFO - [POST] /api/best5 received
+2024-04-10 22:04:33,426 - INFO - Job 3 has been registered into the queue
+2024-04-10 22:04:33,427 - INFO - Executing job 3 with question 'Percent of adults who achieve at least 300 minutes a week of moderate-intensity aerobic physical activity or 150 minutes a week of vigorous-intensity aerobic activity (or an equivalent combination)'
+2024-04-10 22:04:33,429 - INFO - [GET] /api/get_results/3 received
+2024-04-10 22:04:33,430 - INFO - Job 3 is still running
+2024-04-10 22:04:33,430 - INFO - Job 3 is done
+2024-04-10 22:04:33,632 - INFO - [GET] /api/get_results/3 received
+2024-04-10 22:04:33,636 - INFO - [POST] /api/best5 received
+2024-04-10 22:04:33,636 - INFO - Job 4 has been registered into the queue
+2024-04-10 22:04:33,636 - INFO - Executing job 4 with question 'Percent of adults who report consuming fruit less than one time daily'
+2024-04-10 22:04:33,639 - INFO - Job 4 is done
+2024-04-10 22:04:33,639 - INFO - [GET] /api/get_results/4 received
+2024-04-10 22:04:33,643 - INFO - [POST] /api/best5 received
+2024-04-10 22:04:33,643 - INFO - Job 5 has been registered into the queue
+2024-04-10 22:04:33,643 - INFO - Executing job 5 with question 'Percent of adults who engage in no leisure-time physical activity'
+2024-04-10 22:04:33,649 - INFO - Job 5 is done
+2024-04-10 22:04:33,651 - INFO - [GET] /api/get_results/5 received
+2024-04-10 22:04:33,655 - INFO - [POST] /api/best5 received
+2024-04-10 22:04:33,655 - INFO - Job 6 has been registered into the queue
+2024-04-10 22:04:33,655 - INFO - Executing job 6 with question 'Percent of adults who achieve at least 150 minutes a week of moderate-intensity aerobic physical activity or 75 minutes a week of vigorous-intensity aerobic activity (or an equivalent combination)'
+2024-04-10 22:04:33,660 - INFO - Job 6 is done
+2024-04-10 22:04:33,660 - INFO - [GET] /api/get_results/6 received
+2024-04-10 22:04:33,664 - INFO - [POST] /api/best5 received
+2024-04-10 22:04:33,665 - INFO - Job 7 has been registered into the queue
+2024-04-10 22:04:33,665 - INFO - Executing job 7 with question 'Percent of adults who report consuming vegetables less than one time daily'
+2024-04-10 22:04:33,668 - INFO - Job 7 is done
+2024-04-10 22:04:33,670 - INFO - [GET] /api/get_results/7 received
+2024-04-10 22:04:33,674 - INFO - [POST] /api/best5 received
+2024-04-10 22:04:33,674 - INFO - Job 8 has been registered into the queue
+2024-04-10 22:04:33,675 - INFO - Executing job 8 with question 'Percent of adults who achieve at least 150 minutes a week of moderate-intensity aerobic physical activity or 75 minutes a week of vigorous-intensity aerobic physical activity and engage in muscle-strengthening activities on 2 or more days a week'
+2024-04-10 22:04:33,677 - INFO - Job 8 is done
+2024-04-10 22:04:33,680 - INFO - [GET] /api/get_results/8 received
+2024-04-10 22:04:33,684 - INFO - [POST] /api/best5 received
+2024-04-10 22:04:33,684 - INFO - Job 9 has been registered into the queue
+2024-04-10 22:04:33,685 - INFO - Executing job 9 with question 'Percent of adults aged 18 years and older who have an overweight classification'
+2024-04-10 22:04:33,691 - INFO - [GET] /api/get_results/9 received
+2024-04-10 22:04:33,691 - INFO - Job 9 is done
+2024-04-10 22:04:36,690 - INFO - [POST] /api/diff_from_mean received
+2024-04-10 22:04:36,690 - INFO - Job 10 has been registered into the queue
+2024-04-10 22:04:36,691 - INFO - Executing job 10 with question 'Percent of adults who engage in muscle-strengthening activities on 2 or more days a week'
+2024-04-10 22:04:36,693 - INFO - Job 10 is done
+2024-04-10 22:04:36,695 - INFO - [GET] /api/get_results/10 received
+2024-04-10 22:04:36,701 - INFO - [POST] /api/diff_from_mean received
+2024-04-10 22:04:36,701 - INFO - Job 11 has been registered into the queue
+2024-04-10 22:04:36,702 - INFO - Executing job 11 with question 'Percent of adults aged 18 years and older who have obesity'
+2024-04-10 22:04:36,707 - INFO - Job 11 is done
+2024-04-10 22:04:36,708 - INFO - [GET] /api/get_results/11 received
+2024-04-10 22:04:36,713 - INFO - [POST] /api/diff_from_mean received
+2024-04-10 22:04:36,713 - INFO - Job 12 has been registered into the queue
+2024-04-10 22:04:36,713 - INFO - Executing job 12 with question 'Percent of adults who achieve at least 300 minutes a week of moderate-intensity aerobic physical activity or 150 minutes a week of vigorous-intensity aerobic activity (or an equivalent combination)'
+2024-04-10 22:04:36,716 - INFO - Job 12 is done
+2024-04-10 22:04:36,718 - INFO - [GET] /api/get_results/12 received
+2024-04-10 22:04:36,722 - INFO - [POST] /api/diff_from_mean received
+2024-04-10 22:04:36,722 - INFO - Job 13 has been registered into the queue
+2024-04-10 22:04:36,723 - INFO - Executing job 13 with question 'Percent of adults who report consuming fruit less than one time daily'
+2024-04-10 22:04:36,724 - INFO - Job 13 is done
+2024-04-10 22:04:36,726 - INFO - [GET] /api/get_results/13 received
+2024-04-10 22:04:36,730 - INFO - [POST] /api/diff_from_mean received
+2024-04-10 22:04:36,730 - INFO - Job 14 has been registered into the queue
+2024-04-10 22:04:36,730 - INFO - Executing job 14 with question 'Percent of adults who engage in no leisure-time physical activity'
+2024-04-10 22:04:36,735 - INFO - Job 14 is done
+2024-04-10 22:04:36,737 - INFO - [GET] /api/get_results/14 received
+2024-04-10 22:04:36,741 - INFO - [POST] /api/diff_from_mean received
+2024-04-10 22:04:36,741 - INFO - Job 15 has been registered into the queue
+2024-04-10 22:04:36,741 - INFO - Executing job 15 with question 'Percent of adults who achieve at least 150 minutes a week of moderate-intensity aerobic physical activity or 75 minutes a week of vigorous-intensity aerobic activity (or an equivalent combination)'
+2024-04-10 22:04:36,745 - INFO - Job 15 is done
+2024-04-10 22:04:36,747 - INFO - [GET] /api/get_results/15 received
+2024-04-10 22:04:36,751 - INFO - [POST] /api/diff_from_mean received
+2024-04-10 22:04:36,751 - INFO - Job 16 has been registered into the queue
+2024-04-10 22:04:36,752 - INFO - Executing job 16 with question 'Percent of adults who report consuming vegetables less than one time daily'
+2024-04-10 22:04:36,754 - INFO - [GET] /api/get_results/16 received
+2024-04-10 22:04:36,755 - INFO - Job 16 is done
+2024-04-10 22:04:36,758 - INFO - [POST] /api/diff_from_mean received
+2024-04-10 22:04:36,759 - INFO - Job 17 has been registered into the queue
+2024-04-10 22:04:36,759 - INFO - Executing job 17 with question 'Percent of adults who achieve at least 150 minutes a week of moderate-intensity aerobic physical activity or 75 minutes a week of vigorous-intensity aerobic physical activity and engage in muscle-strengthening activities on 2 or more days a week'
+2024-04-10 22:04:36,761 - INFO - Job 17 is done
+2024-04-10 22:04:36,763 - INFO - [GET] /api/get_results/17 received
+2024-04-10 22:04:36,768 - INFO - [POST] /api/diff_from_mean received
+2024-04-10 22:04:36,769 - INFO - Job 18 has been registered into the queue
+2024-04-10 22:04:36,769 - INFO - Executing job 18 with question 'Percent of adults aged 18 years and older who have an overweight classification'
+2024-04-10 22:04:36,775 - INFO - Job 18 is done
+2024-04-10 22:04:36,776 - INFO - [GET] /api/get_results/18 received
+2024-04-10 22:04:36,782 - INFO - [POST] /api/global_mean received
+2024-04-10 22:04:36,783 - INFO - Job 19 has been registered into the queue
+2024-04-10 22:04:36,783 - INFO - Executing job 19 with question 'Percent of adults who engage in muscle-strengthening activities on 2 or more days a week'
+2024-04-10 22:04:36,784 - INFO - Job 19 is done
+2024-04-10 22:04:36,785 - INFO - [GET] /api/get_results/19 received
+2024-04-10 22:04:36,788 - INFO - [POST] /api/global_mean received
+2024-04-10 22:04:36,788 - INFO - Job 20 has been registered into the queue
+2024-04-10 22:04:36,789 - INFO - Executing job 20 with question 'Percent of adults aged 18 years and older who have obesity'
+2024-04-10 22:04:36,789 - INFO - Job 20 is done
+2024-04-10 22:04:36,791 - INFO - [GET] /api/get_results/20 received
+2024-04-10 22:04:36,794 - INFO - [POST] /api/global_mean received
+2024-04-10 22:04:36,794 - INFO - Job 21 has been registered into the queue
+2024-04-10 22:04:36,795 - INFO - Executing job 21 with question 'Percent of adults who achieve at least 300 minutes a week of moderate-intensity aerobic physical activity or 150 minutes a week of vigorous-intensity aerobic activity (or an equivalent combination)'
+2024-04-10 22:04:36,795 - INFO - Job 21 is done
+2024-04-10 22:04:36,797 - INFO - [GET] /api/get_results/21 received
+2024-04-10 22:04:36,800 - INFO - [POST] /api/global_mean received
+2024-04-10 22:04:36,800 - INFO - Job 22 has been registered into the queue
+2024-04-10 22:04:36,800 - INFO - Executing job 22 with question 'Percent of adults who report consuming fruit less than one time daily'
+2024-04-10 22:04:36,801 - INFO - Job 22 is done
+2024-04-10 22:04:36,802 - INFO - [GET] /api/get_results/22 received
+2024-04-10 22:04:36,805 - INFO - [POST] /api/global_mean received
+2024-04-10 22:04:36,805 - INFO - Job 23 has been registered into the queue
+2024-04-10 22:04:36,806 - INFO - Executing job 23 with question 'Percent of adults who engage in no leisure-time physical activity'
+2024-04-10 22:04:36,806 - INFO - Job 23 is done
+2024-04-10 22:04:36,808 - INFO - [GET] /api/get_results/23 received
+2024-04-10 22:04:36,811 - INFO - [POST] /api/global_mean received
+2024-04-10 22:04:36,811 - INFO - Job 24 has been registered into the queue
+2024-04-10 22:04:36,812 - INFO - Executing job 24 with question 'Percent of adults who achieve at least 150 minutes a week of moderate-intensity aerobic physical activity or 75 minutes a week of vigorous-intensity aerobic activity (or an equivalent combination)'
+2024-04-10 22:04:36,812 - INFO - Job 24 is done
+2024-04-10 22:04:36,814 - INFO - [GET] /api/get_results/24 received
+2024-04-10 22:04:36,817 - INFO - [POST] /api/global_mean received
+2024-04-10 22:04:36,817 - INFO - Job 25 has been registered into the queue
+2024-04-10 22:04:36,818 - INFO - Executing job 25 with question 'Percent of adults who report consuming vegetables less than one time daily'
+2024-04-10 22:04:36,818 - INFO - Job 25 is done
+2024-04-10 22:04:36,820 - INFO - [GET] /api/get_results/25 received
+2024-04-10 22:04:36,822 - INFO - [POST] /api/global_mean received
+2024-04-10 22:04:36,822 - INFO - Job 26 has been registered into the queue
+2024-04-10 22:04:36,823 - INFO - Executing job 26 with question 'Percent of adults who achieve at least 150 minutes a week of moderate-intensity aerobic physical activity or 75 minutes a week of vigorous-intensity aerobic physical activity and engage in muscle-strengthening activities on 2 or more days a week'
+2024-04-10 22:04:36,823 - INFO - Job 26 is done
+2024-04-10 22:04:36,825 - INFO - [GET] /api/get_results/26 received
+2024-04-10 22:04:36,828 - INFO - [POST] /api/global_mean received
+2024-04-10 22:04:36,828 - INFO - Job 27 has been registered into the queue
+2024-04-10 22:04:36,828 - INFO - Executing job 27 with question 'Percent of adults aged 18 years and older who have an overweight classification'
+2024-04-10 22:04:36,829 - INFO - Job 27 is done
+2024-04-10 22:04:36,831 - INFO - [GET] /api/get_results/27 received
+2024-04-10 22:04:36,835 - INFO - [POST] /api/mean_by_category received
+2024-04-10 22:04:36,835 - INFO - Job 28 has been registered into the queue
+2024-04-10 22:04:36,836 - INFO - Executing job 28 with question 'Percent of adults who engage in muscle-strengthening activities on 2 or more days a week'
+2024-04-10 22:04:36,848 - INFO - [GET] /api/get_results/28 received
+2024-04-10 22:04:36,849 - INFO - Job 28 is still running
+2024-04-10 22:04:36,849 - INFO - Job 28 is done
+2024-04-10 22:04:37,055 - INFO - [GET] /api/get_results/28 received
+2024-04-10 22:04:37,119 - INFO - [POST] /api/mean_by_category received
+2024-04-10 22:04:37,119 - INFO - Job 29 has been registered into the queue
+2024-04-10 22:04:37,120 - INFO - Executing job 29 with question 'Percent of adults aged 18 years and older who have obesity'
+2024-04-10 22:04:37,137 - INFO - Job 29 is done
+2024-04-10 22:04:37,138 - INFO - [GET] /api/get_results/29 received
+2024-04-10 22:04:37,166 - INFO - [POST] /api/mean_by_category received
+2024-04-10 22:04:37,166 - INFO - Job 30 has been registered into the queue
+2024-04-10 22:04:37,167 - INFO - Executing job 30 with question 'Percent of adults who achieve at least 300 minutes a week of moderate-intensity aerobic physical activity or 150 minutes a week of vigorous-intensity aerobic activity (or an equivalent combination)'
+2024-04-10 22:04:37,179 - INFO - [GET] /api/get_results/30 received
+2024-04-10 22:04:37,179 - INFO - Job 30 is done
+2024-04-10 22:04:37,203 - INFO - [POST] /api/mean_by_category received
+2024-04-10 22:04:37,203 - INFO - Job 31 has been registered into the queue
+2024-04-10 22:04:37,203 - INFO - Executing job 31 with question 'Percent of adults who report consuming fruit less than one time daily'
+2024-04-10 22:04:37,210 - INFO - Job 31 is done
+2024-04-10 22:04:37,211 - INFO - [GET] /api/get_results/31 received
+2024-04-10 22:04:37,227 - INFO - [POST] /api/mean_by_category received
+2024-04-10 22:04:37,227 - INFO - Job 32 has been registered into the queue
+2024-04-10 22:04:37,227 - INFO - Executing job 32 with question 'Percent of adults who engage in no leisure-time physical activity'
+2024-04-10 22:04:37,244 - INFO - Job 32 is done
+2024-04-10 22:04:37,244 - INFO - [GET] /api/get_results/32 received
+2024-04-10 22:04:37,274 - INFO - [POST] /api/mean_by_category received
+2024-04-10 22:04:37,275 - INFO - Job 33 has been registered into the queue
+2024-04-10 22:04:37,275 - INFO - Executing job 33 with question 'Percent of adults who achieve at least 150 minutes a week of moderate-intensity aerobic physical activity or 75 minutes a week of vigorous-intensity aerobic activity (or an equivalent combination)'
+2024-04-10 22:04:37,290 - INFO - [GET] /api/get_results/33 received
+2024-04-10 22:04:37,290 - INFO - Job 33 is done
+2024-04-10 22:04:37,319 - INFO - [POST] /api/mean_by_category received
+2024-04-10 22:04:37,319 - INFO - Job 34 has been registered into the queue
+2024-04-10 22:04:37,319 - INFO - Executing job 34 with question 'Percent of adults who report consuming vegetables less than one time daily'
+2024-04-10 22:04:37,330 - INFO - [GET] /api/get_results/34 received
+2024-04-10 22:04:37,330 - INFO - Job 34 is still running
+2024-04-10 22:04:37,331 - INFO - Job 34 is done
+2024-04-10 22:04:37,537 - INFO - [GET] /api/get_results/34 received
+2024-04-10 22:04:37,592 - INFO - [POST] /api/mean_by_category received
+2024-04-10 22:04:37,593 - INFO - Job 35 has been registered into the queue
+2024-04-10 22:04:37,597 - INFO - Executing job 35 with question 'Percent of adults who achieve at least 150 minutes a week of moderate-intensity aerobic physical activity or 75 minutes a week of vigorous-intensity aerobic physical activity and engage in muscle-strengthening activities on 2 or more days a week'
+2024-04-10 22:04:37,611 - INFO - [GET] /api/get_results/35 received
+2024-04-10 22:04:37,611 - INFO - Job 35 is done
+2024-04-10 22:04:37,632 - INFO - [POST] /api/mean_by_category received
+2024-04-10 22:04:37,632 - INFO - Job 36 has been registered into the queue
+2024-04-10 22:04:37,633 - INFO - Executing job 36 with question 'Percent of adults aged 18 years and older who have an overweight classification'
+2024-04-10 22:04:37,651 - INFO - [GET] /api/get_results/36 received
+2024-04-10 22:04:37,651 - INFO - Job 36 is done
+2024-04-10 22:04:37,685 - INFO - [POST] /api/state_diff_from_mean received
+2024-04-10 22:04:37,685 - INFO - Job 37 has been registered into the queue
+2024-04-10 22:04:37,686 - INFO - Executing job 37 with question 'Percent of adults who report consuming vegetables less than one time daily'
+2024-04-10 22:04:37,686 - INFO - Job 37 is done
+2024-04-10 22:04:37,688 - INFO - [GET] /api/get_results/37 received
+2024-04-10 22:04:37,690 - INFO - [POST] /api/state_diff_from_mean received
+2024-04-10 22:04:37,690 - INFO - Job 38 has been registered into the queue
+2024-04-10 22:04:37,691 - INFO - Executing job 38 with question 'Percent of adults who report consuming vegetables less than one time daily'
+2024-04-10 22:04:37,691 - INFO - Job 38 is done
+2024-04-10 22:04:37,693 - INFO - [GET] /api/get_results/38 received
+2024-04-10 22:04:37,696 - INFO - [POST] /api/state_diff_from_mean received
+2024-04-10 22:04:37,696 - INFO - Job 39 has been registered into the queue
+2024-04-10 22:04:37,697 - INFO - Executing job 39 with question 'Percent of adults who achieve at least 300 minutes a week of moderate-intensity aerobic physical activity or 150 minutes a week of vigorous-intensity aerobic activity (or an equivalent combination)'
+2024-04-10 22:04:37,698 - INFO - Job 39 is done
+2024-04-10 22:04:37,699 - INFO - [GET] /api/get_results/39 received
+2024-04-10 22:04:37,702 - INFO - [POST] /api/state_diff_from_mean received
+2024-04-10 22:04:37,702 - INFO - Job 40 has been registered into the queue
+2024-04-10 22:04:37,703 - INFO - Executing job 40 with question 'Percent of adults who report consuming vegetables less than one time daily'
+2024-04-10 22:04:37,703 - INFO - Job 40 is done
+2024-04-10 22:04:37,705 - INFO - [GET] /api/get_results/40 received
+2024-04-10 22:04:37,708 - INFO - [POST] /api/state_diff_from_mean received
+2024-04-10 22:04:37,708 - INFO - Job 41 has been registered into the queue
+2024-04-10 22:04:37,709 - INFO - Executing job 41 with question 'Percent of adults who engage in muscle-strengthening activities on 2 or more days a week'
+2024-04-10 22:04:37,709 - INFO - Job 41 is done
+2024-04-10 22:04:37,711 - INFO - [GET] /api/get_results/41 received
+2024-04-10 22:04:37,714 - INFO - [POST] /api/state_diff_from_mean received
+2024-04-10 22:04:37,714 - INFO - Job 42 has been registered into the queue
+2024-04-10 22:04:37,714 - INFO - Executing job 42 with question 'Percent of adults who achieve at least 300 minutes a week of moderate-intensity aerobic physical activity or 150 minutes a week of vigorous-intensity aerobic activity (or an equivalent combination)'
+2024-04-10 22:04:37,715 - INFO - Job 42 is done
+2024-04-10 22:04:37,716 - INFO - [GET] /api/get_results/42 received
+2024-04-10 22:04:37,719 - INFO - [POST] /api/state_diff_from_mean received
+2024-04-10 22:04:37,719 - INFO - Job 43 has been registered into the queue
+2024-04-10 22:04:37,720 - INFO - Executing job 43 with question 'Percent of adults who report consuming vegetables less than one time daily'
+2024-04-10 22:04:37,720 - INFO - Job 43 is done
+2024-04-10 22:04:37,722 - INFO - [GET] /api/get_results/43 received
+2024-04-10 22:04:37,724 - INFO - [POST] /api/state_diff_from_mean received
+2024-04-10 22:04:37,724 - INFO - Job 44 has been registered into the queue
+2024-04-10 22:04:37,725 - INFO - Executing job 44 with question 'Percent of adults who report consuming vegetables less than one time daily'
+2024-04-10 22:04:37,725 - INFO - Job 44 is done
+2024-04-10 22:04:37,727 - INFO - [GET] /api/get_results/44 received
+2024-04-10 22:04:37,730 - INFO - [POST] /api/state_diff_from_mean received
+2024-04-10 22:04:37,731 - INFO - Job 45 has been registered into the queue
+2024-04-10 22:04:37,731 - INFO - Executing job 45 with question 'Percent of adults who achieve at least 300 minutes a week of moderate-intensity aerobic physical activity or 150 minutes a week of vigorous-intensity aerobic activity (or an equivalent combination)'
+2024-04-10 22:04:37,732 - INFO - Job 45 is done
+2024-04-10 22:04:37,734 - INFO - [GET] /api/get_results/45 received
+2024-04-10 22:04:37,736 - INFO - [POST] /api/state_diff_from_mean received
+2024-04-10 22:04:37,737 - INFO - Job 46 has been registered into the queue
+2024-04-10 22:04:37,737 - INFO - Executing job 46 with question 'Percent of adults who achieve at least 300 minutes a week of moderate-intensity aerobic physical activity or 150 minutes a week of vigorous-intensity aerobic activity (or an equivalent combination)'
+2024-04-10 22:04:37,737 - INFO - Job 46 is done
+2024-04-10 22:04:37,739 - INFO - [GET] /api/get_results/46 received
+2024-04-10 22:04:37,742 - INFO - [POST] /api/state_diff_from_mean received
+2024-04-10 22:04:37,742 - INFO - Job 47 has been registered into the queue
+2024-04-10 22:04:37,742 - INFO - Executing job 47 with question 'Percent of adults who engage in muscle-strengthening activities on 2 or more days a week'
+2024-04-10 22:04:37,743 - INFO - Job 47 is done
+2024-04-10 22:04:37,744 - INFO - [GET] /api/get_results/47 received
+2024-04-10 22:04:37,747 - INFO - [POST] /api/state_diff_from_mean received
+2024-04-10 22:04:37,748 - INFO - Job 48 has been registered into the queue
+2024-04-10 22:04:37,748 - INFO - Executing job 48 with question 'Percent of adults who achieve at least 300 minutes a week of moderate-intensity aerobic physical activity or 150 minutes a week of vigorous-intensity aerobic activity (or an equivalent combination)'
+2024-04-10 22:04:37,748 - INFO - Job 48 is done
+2024-04-10 22:04:37,750 - INFO - [GET] /api/get_results/48 received
+2024-04-10 22:04:37,753 - INFO - [POST] /api/state_diff_from_mean received
+2024-04-10 22:04:37,753 - INFO - Job 49 has been registered into the queue
+2024-04-10 22:04:37,753 - INFO - Executing job 49 with question 'Percent of adults who achieve at least 300 minutes a week of moderate-intensity aerobic physical activity or 150 minutes a week of vigorous-intensity aerobic activity (or an equivalent combination)'
+2024-04-10 22:04:37,754 - INFO - Job 49 is done
+2024-04-10 22:04:37,756 - INFO - [GET] /api/get_results/49 received
+2024-04-10 22:04:37,759 - INFO - [POST] /api/state_diff_from_mean received
+2024-04-10 22:04:37,759 - INFO - Job 50 has been registered into the queue
+2024-04-10 22:04:37,759 - INFO - Executing job 50 with question 'Percent of adults who engage in muscle-strengthening activities on 2 or more days a week'
+2024-04-10 22:04:37,760 - INFO - Job 50 is done
+2024-04-10 22:04:37,762 - INFO - [GET] /api/get_results/50 received
+2024-04-10 22:04:37,764 - INFO - [POST] /api/state_diff_from_mean received
+2024-04-10 22:04:37,765 - INFO - Job 51 has been registered into the queue
+2024-04-10 22:04:37,765 - INFO - Executing job 51 with question 'Percent of adults who report consuming vegetables less than one time daily'
+2024-04-10 22:04:37,766 - INFO - Job 51 is done
+2024-04-10 22:04:37,767 - INFO - [GET] /api/get_results/51 received
+2024-04-10 22:04:37,770 - INFO - [POST] /api/state_diff_from_mean received
+2024-04-10 22:04:37,770 - INFO - Job 52 has been registered into the queue
+2024-04-10 22:04:37,770 - INFO - Executing job 52 with question 'Percent of adults who engage in muscle-strengthening activities on 2 or more days a week'
+2024-04-10 22:04:37,771 - INFO - Job 52 is done
+2024-04-10 22:04:37,772 - INFO - [GET] /api/get_results/52 received
+2024-04-10 22:04:37,775 - INFO - [POST] /api/state_diff_from_mean received
+2024-04-10 22:04:37,775 - INFO - Job 53 has been registered into the queue
+2024-04-10 22:04:37,776 - INFO - Executing job 53 with question 'Percent of adults who achieve at least 300 minutes a week of moderate-intensity aerobic physical activity or 150 minutes a week of vigorous-intensity aerobic activity (or an equivalent combination)'
+2024-04-10 22:04:37,776 - INFO - Job 53 is done
+2024-04-10 22:04:37,778 - INFO - [GET] /api/get_results/53 received
+2024-04-10 22:04:37,781 - INFO - [POST] /api/state_diff_from_mean received
+2024-04-10 22:04:37,781 - INFO - Job 54 has been registered into the queue
+2024-04-10 22:04:37,782 - INFO - Executing job 54 with question 'Percent of adults who achieve at least 300 minutes a week of moderate-intensity aerobic physical activity or 150 minutes a week of vigorous-intensity aerobic activity (or an equivalent combination)'
+2024-04-10 22:04:37,782 - INFO - Job 54 is done
+2024-04-10 22:04:37,784 - INFO - [GET] /api/get_results/54 received
+2024-04-10 22:04:37,787 - INFO - [POST] /api/state_diff_from_mean received
+2024-04-10 22:04:37,787 - INFO - Job 55 has been registered into the queue
+2024-04-10 22:04:37,788 - INFO - Executing job 55 with question 'Percent of adults who report consuming vegetables less than one time daily'
+2024-04-10 22:04:37,788 - INFO - Job 55 is done
+2024-04-10 22:04:37,790 - INFO - [GET] /api/get_results/55 received
+2024-04-10 22:04:37,793 - INFO - [POST] /api/state_diff_from_mean received
+2024-04-10 22:04:37,793 - INFO - Job 56 has been registered into the queue
+2024-04-10 22:04:37,793 - INFO - Executing job 56 with question 'Percent of adults who report consuming vegetables less than one time daily'
+2024-04-10 22:04:37,794 - INFO - Job 56 is done
+2024-04-10 22:04:37,796 - INFO - [GET] /api/get_results/56 received
+2024-04-10 22:04:37,800 - INFO - [POST] /api/state_mean received
+2024-04-10 22:04:37,800 - INFO - Job 57 has been registered into the queue
+2024-04-10 22:04:37,801 - INFO - Executing job 57 with question 'Percent of adults who achieve at least 150 minutes a week of moderate-intensity aerobic physical activity or 75 minutes a week of vigorous-intensity aerobic activity (or an equivalent combination)'
+2024-04-10 22:04:37,801 - INFO - Job 57 is done
+2024-04-10 22:04:37,803 - INFO - [GET] /api/get_results/57 received
+2024-04-10 22:04:37,806 - INFO - [POST] /api/state_mean received
+2024-04-10 22:04:37,806 - INFO - Job 58 has been registered into the queue
+2024-04-10 22:04:37,806 - INFO - Executing job 58 with question 'Percent of adults who achieve at least 150 minutes a week of moderate-intensity aerobic physical activity or 75 minutes a week of vigorous-intensity aerobic activity (or an equivalent combination)'
+2024-04-10 22:04:37,807 - INFO - Job 58 is done
+2024-04-10 22:04:37,808 - INFO - [GET] /api/get_results/58 received
+2024-04-10 22:04:37,811 - INFO - [POST] /api/state_mean received
+2024-04-10 22:04:37,811 - INFO - Job 59 has been registered into the queue
+2024-04-10 22:04:37,812 - INFO - Executing job 59 with question 'Percent of adults who achieve at least 150 minutes a week of moderate-intensity aerobic physical activity or 75 minutes a week of vigorous-intensity aerobic physical activity and engage in muscle-strengthening activities on 2 or more days a week'
+2024-04-10 22:04:37,812 - INFO - Job 59 is done
+2024-04-10 22:04:37,814 - INFO - [GET] /api/get_results/59 received
+2024-04-10 22:04:37,816 - INFO - [POST] /api/state_mean received
+2024-04-10 22:04:37,817 - INFO - Job 60 has been registered into the queue
+2024-04-10 22:04:37,817 - INFO - Executing job 60 with question 'Percent of adults who achieve at least 150 minutes a week of moderate-intensity aerobic physical activity or 75 minutes a week of vigorous-intensity aerobic activity (or an equivalent combination)'
+2024-04-10 22:04:37,817 - INFO - Job 60 is done
+2024-04-10 22:04:37,819 - INFO - [GET] /api/get_results/60 received
+2024-04-10 22:04:37,822 - INFO - [POST] /api/state_mean received
+2024-04-10 22:04:37,822 - INFO - Job 61 has been registered into the queue
+2024-04-10 22:04:37,823 - INFO - Executing job 61 with question 'Percent of adults aged 18 years and older who have an overweight classification'
+2024-04-10 22:04:37,823 - INFO - Job 61 is done
+2024-04-10 22:04:37,825 - INFO - [GET] /api/get_results/61 received
+2024-04-10 22:04:37,829 - INFO - [POST] /api/state_mean received
+2024-04-10 22:04:37,829 - INFO - Job 62 has been registered into the queue
+2024-04-10 22:04:37,829 - INFO - Executing job 62 with question 'Percent of adults who achieve at least 150 minutes a week of moderate-intensity aerobic physical activity or 75 minutes a week of vigorous-intensity aerobic physical activity and engage in muscle-strengthening activities on 2 or more days a week'
+2024-04-10 22:04:37,830 - INFO - Job 62 is done
+2024-04-10 22:04:37,832 - INFO - [GET] /api/get_results/62 received
+2024-04-10 22:04:37,834 - INFO - [POST] /api/state_mean received
+2024-04-10 22:04:37,835 - INFO - Job 63 has been registered into the queue
+2024-04-10 22:04:37,835 - INFO - Executing job 63 with question 'Percent of adults who achieve at least 150 minutes a week of moderate-intensity aerobic physical activity or 75 minutes a week of vigorous-intensity aerobic activity (or an equivalent combination)'
+2024-04-10 22:04:37,835 - INFO - Job 63 is done
+2024-04-10 22:04:37,837 - INFO - [GET] /api/get_results/63 received
+2024-04-10 22:04:37,840 - INFO - [POST] /api/state_mean received
+2024-04-10 22:04:37,840 - INFO - Job 64 has been registered into the queue
+2024-04-10 22:04:37,840 - INFO - Executing job 64 with question 'Percent of adults who achieve at least 150 minutes a week of moderate-intensity aerobic physical activity or 75 minutes a week of vigorous-intensity aerobic activity (or an equivalent combination)'
+2024-04-10 22:04:37,841 - INFO - Job 64 is done
+2024-04-10 22:04:37,842 - INFO - [GET] /api/get_results/64 received
+2024-04-10 22:04:37,845 - INFO - [POST] /api/state_mean received
+2024-04-10 22:04:37,845 - INFO - Job 65 has been registered into the queue
+2024-04-10 22:04:37,846 - INFO - Executing job 65 with question 'Percent of adults who achieve at least 150 minutes a week of moderate-intensity aerobic physical activity or 75 minutes a week of vigorous-intensity aerobic physical activity and engage in muscle-strengthening activities on 2 or more days a week'
+2024-04-10 22:04:37,846 - INFO - Job 65 is done
+2024-04-10 22:04:37,848 - INFO - [GET] /api/get_results/65 received
+2024-04-10 22:04:37,850 - INFO - [POST] /api/state_mean received
+2024-04-10 22:04:37,850 - INFO - Job 66 has been registered into the queue
+2024-04-10 22:04:37,851 - INFO - Executing job 66 with question 'Percent of adults who report consuming vegetables less than one time daily'
+2024-04-10 22:04:37,851 - INFO - Job 66 is done
+2024-04-10 22:04:37,853 - INFO - [GET] /api/get_results/66 received
+2024-04-10 22:04:37,856 - INFO - [POST] /api/state_mean received
+2024-04-10 22:04:37,856 - INFO - Job 67 has been registered into the queue
+2024-04-10 22:04:37,857 - INFO - Executing job 67 with question 'Percent of adults aged 18 years and older who have an overweight classification'
+2024-04-10 22:04:37,857 - INFO - Job 67 is done
+2024-04-10 22:04:37,859 - INFO - [GET] /api/get_results/67 received
+2024-04-10 22:04:37,861 - INFO - [POST] /api/state_mean received
+2024-04-10 22:04:37,862 - INFO - Job 68 has been registered into the queue
+2024-04-10 22:04:37,862 - INFO - Executing job 68 with question 'Percent of adults who report consuming vegetables less than one time daily'
+2024-04-10 22:04:37,862 - INFO - Job 68 is done
+2024-04-10 22:04:37,864 - INFO - [GET] /api/get_results/68 received
+2024-04-10 22:04:37,867 - INFO - [POST] /api/state_mean received
+2024-04-10 22:04:37,867 - INFO - Job 69 has been registered into the queue
+2024-04-10 22:04:37,868 - INFO - Executing job 69 with question 'Percent of adults who achieve at least 150 minutes a week of moderate-intensity aerobic physical activity or 75 minutes a week of vigorous-intensity aerobic physical activity and engage in muscle-strengthening activities on 2 or more days a week'
+2024-04-10 22:04:37,868 - INFO - Job 69 is done
+2024-04-10 22:04:37,870 - INFO - [GET] /api/get_results/69 received
+2024-04-10 22:04:37,872 - INFO - [POST] /api/state_mean received
+2024-04-10 22:04:37,873 - INFO - Job 70 has been registered into the queue
+2024-04-10 22:04:37,873 - INFO - Executing job 70 with question 'Percent of adults aged 18 years and older who have an overweight classification'
+2024-04-10 22:04:37,874 - INFO - Job 70 is done
+2024-04-10 22:04:37,875 - INFO - [GET] /api/get_results/70 received
+2024-04-10 22:04:37,878 - INFO - [POST] /api/state_mean received
+2024-04-10 22:04:37,878 - INFO - Job 71 has been registered into the queue
+2024-04-10 22:04:37,878 - INFO - Executing job 71 with question 'Percent of adults who achieve at least 150 minutes a week of moderate-intensity aerobic physical activity or 75 minutes a week of vigorous-intensity aerobic activity (or an equivalent combination)'
+2024-04-10 22:04:37,879 - INFO - Job 71 is done
+2024-04-10 22:04:37,880 - INFO - [GET] /api/get_results/71 received
+2024-04-10 22:04:37,883 - INFO - [POST] /api/state_mean received
+2024-04-10 22:04:37,884 - INFO - Job 72 has been registered into the queue
+2024-04-10 22:04:37,884 - INFO - Executing job 72 with question 'Percent of adults aged 18 years and older who have an overweight classification'
+2024-04-10 22:04:37,884 - INFO - Job 72 is done
+2024-04-10 22:04:37,887 - INFO - [GET] /api/get_results/72 received
+2024-04-10 22:04:37,890 - INFO - [POST] /api/state_mean received
+2024-04-10 22:04:37,890 - INFO - Job 73 has been registered into the queue
+2024-04-10 22:04:37,890 - INFO - Executing job 73 with question 'Percent of adults who report consuming vegetables less than one time daily'
+2024-04-10 22:04:37,891 - INFO - Job 73 is done
+2024-04-10 22:04:37,893 - INFO - [GET] /api/get_results/73 received
+2024-04-10 22:04:37,896 - INFO - [POST] /api/state_mean received
+2024-04-10 22:04:37,896 - INFO - Job 74 has been registered into the queue
+2024-04-10 22:04:37,896 - INFO - Executing job 74 with question 'Percent of adults who report consuming vegetables less than one time daily'
+2024-04-10 22:04:37,897 - INFO - Job 74 is done
+2024-04-10 22:04:37,898 - INFO - [GET] /api/get_results/74 received
+2024-04-10 22:04:37,901 - INFO - [POST] /api/state_mean received
+2024-04-10 22:04:37,901 - INFO - Job 75 has been registered into the queue
+2024-04-10 22:04:37,901 - INFO - Executing job 75 with question 'Percent of adults who achieve at least 150 minutes a week of moderate-intensity aerobic physical activity or 75 minutes a week of vigorous-intensity aerobic activity (or an equivalent combination)'
+2024-04-10 22:04:37,902 - INFO - Job 75 is done
+2024-04-10 22:04:37,904 - INFO - [GET] /api/get_results/75 received
+2024-04-10 22:04:37,907 - INFO - [POST] /api/state_mean received
+2024-04-10 22:04:37,907 - INFO - Job 76 has been registered into the queue
+2024-04-10 22:04:37,908 - INFO - Executing job 76 with question 'Percent of adults who achieve at least 150 minutes a week of moderate-intensity aerobic physical activity or 75 minutes a week of vigorous-intensity aerobic activity (or an equivalent combination)'
+2024-04-10 22:04:37,908 - INFO - Job 76 is done
+2024-04-10 22:04:37,910 - INFO - [GET] /api/get_results/76 received
+2024-04-10 22:04:37,915 - INFO - [POST] /api/state_mean_by_category received
+2024-04-10 22:04:37,915 - INFO - Job 77 has been registered into the queue
+2024-04-10 22:04:37,915 - INFO - Executing job 77 with question 'Percent of adults aged 18 years and older who have obesity'
+2024-04-10 22:04:37,916 - INFO - Job 77 is done
+2024-04-10 22:04:37,918 - INFO - [GET] /api/get_results/77 received
+2024-04-10 22:04:37,923 - INFO - [POST] /api/state_mean_by_category received
+2024-04-10 22:04:37,923 - INFO - Job 78 has been registered into the queue
+2024-04-10 22:04:37,923 - INFO - Executing job 78 with question 'Percent of adults aged 18 years and older who have an overweight classification'
+2024-04-10 22:04:37,924 - INFO - Job 78 is done
+2024-04-10 22:04:37,926 - INFO - [GET] /api/get_results/78 received
+2024-04-10 22:04:37,929 - INFO - [POST] /api/state_mean_by_category received
+2024-04-10 22:04:37,929 - INFO - Job 79 has been registered into the queue
+2024-04-10 22:04:37,930 - INFO - Executing job 79 with question 'Percent of adults who report consuming vegetables less than one time daily'
+2024-04-10 22:04:37,930 - INFO - Job 79 is done
+2024-04-10 22:04:37,932 - INFO - [GET] /api/get_results/79 received
+2024-04-10 22:04:37,936 - INFO - [POST] /api/state_mean_by_category received
+2024-04-10 22:04:37,936 - INFO - Job 80 has been registered into the queue
+2024-04-10 22:04:37,936 - INFO - Executing job 80 with question 'Percent of adults aged 18 years and older who have obesity'
+2024-04-10 22:04:37,937 - INFO - Job 80 is done
+2024-04-10 22:04:37,939 - INFO - [GET] /api/get_results/80 received
+2024-04-10 22:04:37,942 - INFO - [POST] /api/state_mean_by_category received
+2024-04-10 22:04:37,942 - INFO - Job 81 has been registered into the queue
+2024-04-10 22:04:37,942 - INFO - Executing job 81 with question 'Percent of adults who engage in muscle-strengthening activities on 2 or more days a week'
+2024-04-10 22:04:37,943 - INFO - Job 81 is done
+2024-04-10 22:04:37,945 - INFO - [GET] /api/get_results/81 received
+2024-04-10 22:04:37,948 - INFO - [POST] /api/state_mean_by_category received
+2024-04-10 22:04:37,949 - INFO - Job 82 has been registered into the queue
+2024-04-10 22:04:37,949 - INFO - Executing job 82 with question 'Percent of adults who report consuming vegetables less than one time daily'
+2024-04-10 22:04:37,950 - INFO - Job 82 is done
+2024-04-10 22:04:37,951 - INFO - [GET] /api/get_results/82 received
+2024-04-10 22:04:37,954 - INFO - [POST] /api/state_mean_by_category received
+2024-04-10 22:04:37,955 - INFO - Job 83 has been registered into the queue
+2024-04-10 22:04:37,955 - INFO - Executing job 83 with question 'Percent of adults aged 18 years and older who have obesity'
+2024-04-10 22:04:37,956 - INFO - Job 83 is done
+2024-04-10 22:04:37,958 - INFO - [GET] /api/get_results/83 received
+2024-04-10 22:04:37,963 - INFO - [POST] /api/state_mean_by_category received
+2024-04-10 22:04:37,963 - INFO - Job 84 has been registered into the queue
+2024-04-10 22:04:37,964 - INFO - Executing job 84 with question 'Percent of adults aged 18 years and older who have obesity'
+2024-04-10 22:04:37,965 - INFO - Job 84 is done
+2024-04-10 22:04:37,967 - INFO - [GET] /api/get_results/84 received
+2024-04-10 22:04:37,972 - INFO - [POST] /api/state_mean_by_category received
+2024-04-10 22:04:37,972 - INFO - Job 85 has been registered into the queue
+2024-04-10 22:04:37,973 - INFO - Executing job 85 with question 'Percent of adults who report consuming vegetables less than one time daily'
+2024-04-10 22:04:37,974 - INFO - Job 85 is done
+2024-04-10 22:04:37,975 - INFO - [GET] /api/get_results/85 received
+2024-04-10 22:04:37,980 - INFO - [POST] /api/state_mean_by_category received
+2024-04-10 22:04:37,980 - INFO - Job 86 has been registered into the queue
+2024-04-10 22:04:37,981 - INFO - Executing job 86 with question 'Percent of adults who achieve at least 150 minutes a week of moderate-intensity aerobic physical activity or 75 minutes a week of vigorous-intensity aerobic physical activity and engage in muscle-strengthening activities on 2 or more days a week'
+2024-04-10 22:04:37,981 - INFO - Job 86 is done
+2024-04-10 22:04:37,984 - INFO - [GET] /api/get_results/86 received
+2024-04-10 22:04:37,988 - INFO - [POST] /api/state_mean_by_category received
+2024-04-10 22:04:37,988 - INFO - Job 87 has been registered into the queue
+2024-04-10 22:04:37,988 - INFO - Executing job 87 with question 'Percent of adults who engage in muscle-strengthening activities on 2 or more days a week'
+2024-04-10 22:04:37,989 - INFO - Job 87 is done
+2024-04-10 22:04:37,991 - INFO - [GET] /api/get_results/87 received
+2024-04-10 22:04:37,994 - INFO - [POST] /api/state_mean_by_category received
+2024-04-10 22:04:37,995 - INFO - Job 88 has been registered into the queue
+2024-04-10 22:04:37,995 - INFO - Executing job 88 with question 'Percent of adults who achieve at least 150 minutes a week of moderate-intensity aerobic physical activity or 75 minutes a week of vigorous-intensity aerobic physical activity and engage in muscle-strengthening activities on 2 or more days a week'
+2024-04-10 22:04:37,996 - INFO - Job 88 is done
+2024-04-10 22:04:37,997 - INFO - [GET] /api/get_results/88 received
+2024-04-10 22:04:38,002 - INFO - [POST] /api/state_mean_by_category received
+2024-04-10 22:04:38,002 - INFO - Job 89 has been registered into the queue
+2024-04-10 22:04:38,002 - INFO - Executing job 89 with question 'Percent of adults who report consuming vegetables less than one time daily'
+2024-04-10 22:04:38,003 - INFO - Job 89 is done
+2024-04-10 22:04:38,005 - INFO - [GET] /api/get_results/89 received
+2024-04-10 22:04:38,009 - INFO - [POST] /api/state_mean_by_category received
+2024-04-10 22:04:38,009 - INFO - Job 90 has been registered into the queue
+2024-04-10 22:04:38,010 - INFO - Executing job 90 with question 'Percent of adults who engage in muscle-strengthening activities on 2 or more days a week'
+2024-04-10 22:04:38,010 - INFO - Job 90 is done
+2024-04-10 22:04:38,013 - INFO - [GET] /api/get_results/90 received
+2024-04-10 22:04:38,018 - INFO - [POST] /api/state_mean_by_category received
+2024-04-10 22:04:38,018 - INFO - Job 91 has been registered into the queue
+2024-04-10 22:04:38,018 - INFO - Executing job 91 with question 'Percent of adults aged 18 years and older who have an overweight classification'
+2024-04-10 22:04:38,020 - INFO - Job 91 is done
+2024-04-10 22:04:38,021 - INFO - [GET] /api/get_results/91 received
+2024-04-10 22:04:38,026 - INFO - [POST] /api/state_mean_by_category received
+2024-04-10 22:04:38,027 - INFO - Job 92 has been registered into the queue
+2024-04-10 22:04:38,027 - INFO - Executing job 92 with question 'Percent of adults who engage in muscle-strengthening activities on 2 or more days a week'
+2024-04-10 22:04:38,028 - INFO - Job 92 is done
+2024-04-10 22:04:38,030 - INFO - [GET] /api/get_results/92 received
+2024-04-10 22:04:38,034 - INFO - [POST] /api/state_mean_by_category received
+2024-04-10 22:04:38,035 - INFO - Job 93 has been registered into the queue
+2024-04-10 22:04:38,035 - INFO - Executing job 93 with question 'Percent of adults who achieve at least 150 minutes a week of moderate-intensity aerobic physical activity or 75 minutes a week of vigorous-intensity aerobic physical activity and engage in muscle-strengthening activities on 2 or more days a week'
+2024-04-10 22:04:38,036 - INFO - Job 93 is done
+2024-04-10 22:04:38,038 - INFO - [GET] /api/get_results/93 received
+2024-04-10 22:04:38,043 - INFO - [POST] /api/state_mean_by_category received
+2024-04-10 22:04:38,043 - INFO - Job 94 has been registered into the queue
+2024-04-10 22:04:38,043 - INFO - Executing job 94 with question 'Percent of adults who achieve at least 150 minutes a week of moderate-intensity aerobic physical activity or 75 minutes a week of vigorous-intensity aerobic physical activity and engage in muscle-strengthening activities on 2 or more days a week'
+2024-04-10 22:04:38,044 - INFO - Job 94 is done
+2024-04-10 22:04:38,046 - INFO - [GET] /api/get_results/94 received
+2024-04-10 22:04:38,051 - INFO - [POST] /api/state_mean_by_category received
+2024-04-10 22:04:38,051 - INFO - Job 95 has been registered into the queue
+2024-04-10 22:04:38,052 - INFO - Executing job 95 with question 'Percent of adults aged 18 years and older who have an overweight classification'
+2024-04-10 22:04:38,053 - INFO - Job 95 is done
+2024-04-10 22:04:38,055 - INFO - [GET] /api/get_results/95 received
+2024-04-10 22:04:38,060 - INFO - [POST] /api/state_mean_by_category received
+2024-04-10 22:04:38,060 - INFO - Job 96 has been registered into the queue
+2024-04-10 22:04:38,061 - INFO - Executing job 96 with question 'Percent of adults aged 18 years and older who have an overweight classification'
+2024-04-10 22:04:38,062 - INFO - Job 96 is done
+2024-04-10 22:04:38,063 - INFO - [GET] /api/get_results/96 received
+2024-04-10 22:04:38,069 - INFO - [POST] /api/states_mean received
+2024-04-10 22:04:38,070 - INFO - Job 97 has been registered into the queue
+2024-04-10 22:04:38,070 - INFO - Executing job 97 with question 'Percent of adults who engage in muscle-strengthening activities on 2 or more days a week'
+2024-04-10 22:04:38,074 - INFO - Job 97 is done
+2024-04-10 22:04:38,076 - INFO - [GET] /api/get_results/97 received
+2024-04-10 22:04:38,082 - INFO - [POST] /api/states_mean received
+2024-04-10 22:04:38,082 - INFO - Job 98 has been registered into the queue
+2024-04-10 22:04:38,083 - INFO - Executing job 98 with question 'Percent of adults aged 18 years and older who have obesity'
+2024-04-10 22:04:38,087 - INFO - Job 98 is done
+2024-04-10 22:04:38,089 - INFO - [GET] /api/get_results/98 received
+2024-04-10 22:04:38,095 - INFO - [POST] /api/states_mean received
+2024-04-10 22:04:38,096 - INFO - Job 99 has been registered into the queue
+2024-04-10 22:04:38,096 - INFO - Executing job 99 with question 'Percent of adults who achieve at least 300 minutes a week of moderate-intensity aerobic physical activity or 150 minutes a week of vigorous-intensity aerobic activity (or an equivalent combination)'
+2024-04-10 22:04:38,100 - INFO - Job 99 is done
+2024-04-10 22:04:38,102 - INFO - [GET] /api/get_results/99 received
+2024-04-10 22:04:38,108 - INFO - [POST] /api/states_mean received
+2024-04-10 22:04:38,108 - INFO - Job 100 has been registered into the queue
+2024-04-10 22:04:38,109 - INFO - Executing job 100 with question 'Percent of adults who report consuming fruit less than one time daily'
+2024-04-10 22:04:38,111 - INFO - Job 100 is done
+2024-04-10 22:04:38,113 - INFO - [GET] /api/get_results/100 received
+2024-04-10 22:04:38,118 - INFO - [POST] /api/states_mean received
+2024-04-10 22:04:38,118 - INFO - Job 101 has been registered into the queue
+2024-04-10 22:04:38,119 - INFO - Executing job 101 with question 'Percent of adults who engage in no leisure-time physical activity'
+2024-04-10 22:04:38,123 - INFO - Job 101 is done
+2024-04-10 22:04:38,124 - INFO - [GET] /api/get_results/101 received
+2024-04-10 22:04:38,128 - INFO - [POST] /api/states_mean received
+2024-04-10 22:04:38,128 - INFO - Job 102 has been registered into the queue
+2024-04-10 22:04:38,128 - INFO - Executing job 102 with question 'Percent of adults who achieve at least 150 minutes a week of moderate-intensity aerobic physical activity or 75 minutes a week of vigorous-intensity aerobic activity (or an equivalent combination)'
+2024-04-10 22:04:38,131 - INFO - Job 102 is done
+2024-04-10 22:04:38,133 - INFO - [GET] /api/get_results/102 received
+2024-04-10 22:04:38,138 - INFO - [POST] /api/states_mean received
+2024-04-10 22:04:38,138 - INFO - Job 103 has been registered into the queue
+2024-04-10 22:04:38,138 - INFO - Executing job 103 with question 'Percent of adults who report consuming vegetables less than one time daily'
+2024-04-10 22:04:38,142 - INFO - Job 103 is done
+2024-04-10 22:04:38,142 - INFO - [GET] /api/get_results/103 received
+2024-04-10 22:04:38,147 - INFO - [POST] /api/states_mean received
+2024-04-10 22:04:38,147 - INFO - Job 104 has been registered into the queue
+2024-04-10 22:04:38,148 - INFO - Executing job 104 with question 'Percent of adults who achieve at least 150 minutes a week of moderate-intensity aerobic physical activity or 75 minutes a week of vigorous-intensity aerobic physical activity and engage in muscle-strengthening activities on 2 or more days a week'
+2024-04-10 22:04:38,152 - INFO - Job 104 is done
+2024-04-10 22:04:38,153 - INFO - [GET] /api/get_results/104 received
+2024-04-10 22:04:38,157 - INFO - [POST] /api/states_mean received
+2024-04-10 22:04:38,157 - INFO - Job 105 has been registered into the queue
+2024-04-10 22:04:38,158 - INFO - Executing job 105 with question 'Percent of adults aged 18 years and older who have an overweight classification'
+2024-04-10 22:04:38,161 - INFO - Job 105 is done
+2024-04-10 22:04:38,163 - INFO - [GET] /api/get_results/105 received
+2024-04-10 22:04:38,171 - INFO - [POST] /api/worst5 received
+2024-04-10 22:04:38,171 - INFO - Job 106 has been registered into the queue
+2024-04-10 22:04:38,172 - INFO - Executing job 106 with question 'Percent of adults who engage in muscle-strengthening activities on 2 or more days a week'
+2024-04-10 22:04:38,175 - INFO - Job 106 is done
+2024-04-10 22:04:38,177 - INFO - [GET] /api/get_results/106 received
+2024-04-10 22:04:38,180 - INFO - [POST] /api/worst5 received
+2024-04-10 22:04:38,180 - INFO - Job 107 has been registered into the queue
+2024-04-10 22:04:38,181 - INFO - Executing job 107 with question 'Percent of adults aged 18 years and older who have obesity'
+2024-04-10 22:04:38,185 - INFO - Job 107 is done
+2024-04-10 22:04:38,186 - INFO - [GET] /api/get_results/107 received
+2024-04-10 22:04:38,189 - INFO - [POST] /api/worst5 received
+2024-04-10 22:04:38,189 - INFO - Job 108 has been registered into the queue
+2024-04-10 22:04:38,189 - INFO - Executing job 108 with question 'Percent of adults who achieve at least 300 minutes a week of moderate-intensity aerobic physical activity or 150 minutes a week of vigorous-intensity aerobic activity (or an equivalent combination)'
+2024-04-10 22:04:38,192 - INFO - Job 108 is done
+2024-04-10 22:04:38,193 - INFO - [GET] /api/get_results/108 received
+2024-04-10 22:04:38,196 - INFO - [POST] /api/worst5 received
+2024-04-10 22:04:38,197 - INFO - Job 109 has been registered into the queue
+2024-04-10 22:04:38,197 - INFO - Executing job 109 with question 'Percent of adults who report consuming fruit less than one time daily'
+2024-04-10 22:04:38,200 - INFO - Job 109 is done
+2024-04-10 22:04:38,201 - INFO - [GET] /api/get_results/109 received
+2024-04-10 22:04:38,205 - INFO - [POST] /api/worst5 received
+2024-04-10 22:04:38,205 - INFO - Job 110 has been registered into the queue
+2024-04-10 22:04:38,205 - INFO - Executing job 110 with question 'Percent of adults who engage in no leisure-time physical activity'
+2024-04-10 22:04:38,211 - INFO - Job 110 is done
+2024-04-10 22:04:38,212 - INFO - [GET] /api/get_results/110 received
+2024-04-10 22:04:38,215 - INFO - [POST] /api/worst5 received
+2024-04-10 22:04:38,215 - INFO - Job 111 has been registered into the queue
+2024-04-10 22:04:38,216 - INFO - Executing job 111 with question 'Percent of adults who achieve at least 150 minutes a week of moderate-intensity aerobic physical activity or 75 minutes a week of vigorous-intensity aerobic activity (or an equivalent combination)'
+2024-04-10 22:04:38,219 - INFO - Job 111 is done
+2024-04-10 22:04:38,221 - INFO - [GET] /api/get_results/111 received
+2024-04-10 22:04:38,223 - INFO - [POST] /api/worst5 received
+2024-04-10 22:04:38,223 - INFO - Job 112 has been registered into the queue
+2024-04-10 22:04:38,224 - INFO - Executing job 112 with question 'Percent of adults who report consuming vegetables less than one time daily'
+2024-04-10 22:04:38,226 - INFO - Job 112 is done
+2024-04-10 22:04:38,227 - INFO - [GET] /api/get_results/112 received
+2024-04-10 22:04:38,230 - INFO - [POST] /api/worst5 received
+2024-04-10 22:04:38,230 - INFO - Job 113 has been registered into the queue
+2024-04-10 22:04:38,231 - INFO - Executing job 113 with question 'Percent of adults who achieve at least 150 minutes a week of moderate-intensity aerobic physical activity or 75 minutes a week of vigorous-intensity aerobic physical activity and engage in muscle-strengthening activities on 2 or more days a week'
+2024-04-10 22:04:38,234 - INFO - [GET] /api/get_results/113 received
+2024-04-10 22:04:38,234 - INFO - Job 113 is done
+2024-04-10 22:04:38,237 - INFO - [POST] /api/worst5 received
+2024-04-10 22:04:38,237 - INFO - Job 114 has been registered into the queue
+2024-04-10 22:04:38,238 - INFO - Executing job 114 with question 'Percent of adults aged 18 years and older who have an overweight classification'
+2024-04-10 22:04:38,241 - INFO - Job 114 is done
+2024-04-10 22:04:38,243 - INFO - [GET] /api/get_results/114 received
+2024-04-10 22:11:28,508 - INFO - Initializing data ingestor
+2024-04-10 22:11:28,665 - INFO - ThreadPool has been initialized with 4 threads
+2024-04-10 22:11:28,666 - INFO - Starting to get requests...
+
+2024-04-10 22:14:53,236 - INFO - Initializing data ingestor
+2024-04-10 22:14:53,375 - INFO - ThreadPool has been initialized with 4 threads
+2024-04-10 22:14:53,375 - INFO - Starting to get requests...
+
+2024-04-10 22:15:06,833 - INFO - Initializing data ingestor
+2024-04-10 22:15:06,970 - INFO - ThreadPool has been initialized with 4 threads
+2024-04-10 22:15:06,970 - INFO - Starting to get requests...
+
+2024-04-10 22:15:16,635 - INFO - Initializing data ingestor
+2024-04-10 22:15:16,773 - INFO - ThreadPool has been initialized with 4 threads
+2024-04-10 22:15:16,773 - INFO - Starting to get requests...
+
